@@ -1,0 +1,140 @@
+```python
+import fire
+
+# code
+# functions or classes
+
+if __name__ == '__main__':
+    fire.Fire()
+```
+
+# command arguments
+--title="this is title"
+
+# str
+'"str"'
+
+# dic
+'{"key":"val"}'
+
+
+copyed from https://github.com/google/python-fire
+
+ 
+
+You can call `Fire` on any Python object:
+functions, classes, modules, objects, dictionaries, lists, tuples, etc. They all work!
+
+Here's an example of calling Fire on a class.
+
+```python
+import fire
+
+class Calculator(object):
+  """A simple calculator class."""
+
+  def double(self, number):
+    return 2 * number
+
+if __name__ == '__main__':
+  fire.Fire(Calculator)
+```
+
+Then, from the command line, you can run:
+
+```python
+python calculator.py double 10  # 20
+python calculator.py double --number=15  # 30
+```
+
+To learn how Fire behaves on functions, objects, dicts, lists, etc, and to learn about Fire's other features, see the [Using a Fire CLI page](https://github.com/google/python-fire/blob/master/docs/using-cli.md).
+
+For additional examples, see [The Python Fire Guide](https://github.com/google/python-fire/blob/master/docs/guide.md).
+
+
+
+
+
+# Python Fire 
+
+*Python Fire is a library for automatically generating command line interfaces (CLIs) from absolutely any Python object.*
+
+- Python Fire is a simple way to create a CLI in Python. [[1\]](https://github.com/google/python-fire/blob/master/docs/benefits.md#simple-cli)
+- Python Fire is a helpful tool for developing and debugging Python code. [[2\]](https://github.com/google/python-fire/blob/master/docs/benefits.md#debugging)
+- Python Fire helps with exploring existing code or turning other people's code into a CLI. [[3\]](https://github.com/google/python-fire/blob/master/docs/benefits.md#exploring)
+- Python Fire makes transitioning between Bash and Python easier. [[4\]](https://github.com/google/python-fire/blob/master/docs/benefits.md#bash)
+- Python Fire makes using a Python REPL easier by setting up the REPL with the modules and variables you'll need already imported and created. [[5\]](https://github.com/google/python-fire/blob/master/docs/benefits.md#repl)
+
+## Installation
+
+To install Python Fire with pip, run: `pip install fire`
+
+To install Python Fire with conda, run: `conda install fire -c conda-forge`
+
+To install Python Fire from source, first clone the repository and then run: `python setup.py install`
+
+## Basic Usage
+
+You can call `Fire` on any Python object:
+functions, classes, modules, objects, dictionaries, lists, tuples, etc. They all work!
+
+Here's an example of calling Fire on a class.
+
+```python
+import fire
+
+class Calculator(object):
+  """A simple calculator class."""
+
+  def double(self, number):
+    return 2 * number
+
+if __name__ == '__main__':
+  fire.Fire(Calculator)
+```
+
+Then, from the command line, you can run:
+
+```python
+python calculator.py double 10  # 20
+python calculator.py double --number=15  # 30
+```
+
+To learn how Fire behaves on functions, objects, dicts, lists, etc, and to learn about Fire's other features, see the [Using a Fire CLI page](https://github.com/google/python-fire/blob/master/docs/using-cli.md).
+
+For additional examples, see [The Python Fire Guide](https://github.com/google/python-fire/blob/master/docs/guide.md).
+
+## Why is it called Fire?
+
+When you call `Fire`, it fires off (executes) your command.
+
+## Where can I learn more?
+
+Please see [The Python Fire Guide](https://github.com/google/python-fire/blob/master/docs/guide.md).
+
+## Reference
+
+| Setup   | Command            | Notes |
+| ------- | ------------------ | ----- |
+| install | `pip install fire` |       |
+
+| Creating a CLI | Command                | Notes                                     |
+| -------------- | ---------------------- | ----------------------------------------- |
+| import         | `import fire`          |                                           |
+| Call           | `fire.Fire()`          | Turns the current module into a Fire CLI. |
+| Call           | `fire.Fire(component)` | Turns `component` into a Fire CLI.        |
+
+| Using a CLI                                                  | Command                           | Notes                                                        |
+| ------------------------------------------------------------ | --------------------------------- | ------------------------------------------------------------ |
+| [Help](https://github.com/google/python-fire/blob/master/docs/using-cli.md#help-flag) | `command -- --help`               |                                                              |
+| [REPL](https://github.com/google/python-fire/blob/master/docs/using-cli.md#interactive-flag) | `command -- --interactive`        | Enters interactive mode.                                     |
+| [Separator](https://github.com/google/python-fire/blob/master/docs/using-cli.md#separator-flag) | `command -- --separator=X`        | This sets the separator to `X`. The default separator is `-`. |
+| [Completion](https://github.com/google/python-fire/blob/master/docs/using-cli.md#completion-flag) | `command -- --completion [shell]` | Generate a completion script for the CLI.                    |
+| [Trace](https://github.com/google/python-fire/blob/master/docs/using-cli.md#trace-flag) | `command -- --trace`              | Gets a Fire trace for the command.                           |
+| [Verbose](https://github.com/google/python-fire/blob/master/docs/using-cli.md#verbose-flag) | `command -- --verbose`            |                                                              |
+
+*Note that flags are separated from the Fire command by an isolated -- arg.*
+
+## Disclaimer
+
+This is not an official Google product.

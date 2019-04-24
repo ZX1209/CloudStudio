@@ -1,0 +1,16 @@
+
+
+digraph abc{
+  node[shape="record"]
+  edge[style=dashed]
+  
+  label = "this is a label"
+  a[shape="record"];
+  b;
+  c;
+  e;
+
+  a -> b;
+  b -> d;
+  c -> e;
+}

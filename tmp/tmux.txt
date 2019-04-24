@@ -1,0 +1,39 @@
+#ln -s test two
+#ln -s teset
+# bind Ctrl-t to prefix
+unbind C-b
+set -g prefix C-t
+
+#up
+bind-key k select-pane -U
+#down
+bind-key j select-pane -D
+#left
+bind-key h select-pane -L
+#right
+bind-key l select-pane -R
+
+# resize pane
+bind -r ^k resizep -U 10 # upward (prefix Ctrl+k)
+bind -r ^j resizep -D 10 # downward (prefix Ctrl+j)
+bind -r ^h resizep -L 10 # to the left (prefix Ctrl+h)
+bind -r ^l resizep -R 10 # to the right (prefix Ctrl+l)
+
+# split window
+# vertical split (prefix -)
+unbind '"'
+bind - splitw -v
+# horizontal split (prefix \  )
+unbind %
+bind \ splitw -h 
+# kill pane (prefix q)
+bind q killp
+# kill window (prefix Ctrl+q)
+bind ^q killw
+
+" open mouse operator
+set -g mouse
+
+
+# bind a reload key
+bind R source-file ~/.tmux.conf ; display-message "Config reloaded.."

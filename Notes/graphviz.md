@@ -1,0 +1,9 @@
+
+
+```graphviz
+graph pic1 { 
+  a -- b
+  a -- b
+  b -- a [color=blue]
+} 
+```

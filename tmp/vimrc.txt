@@ -1,0 +1,18 @@
+sudo apt-get install vim
+
+echo "
+set autoindent
+set smartindent
+
+
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
+set expandtab
+
+set number
+set relativenumber
+set numberwidth=2
+
+set showmatch
+" >> ~/.vimrc
