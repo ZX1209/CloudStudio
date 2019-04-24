@@ -1,22 +1,35 @@
-# CloudStudio
+# aim
+this repo is used to store and sync my knowledge and experience
+also some settings like .bashrc
+like a cloud home or cloud account
+
+to make life greater
+
+# file structure and rules
+
+## bin/
+runable file.and my lib(python)
+will
+
+## etc/
+settings like .bashrc
+ln -s {path/to/dir} {pattern}
+
+## Notes/
+merge mine and others.now and the future there will only be my notes here
+### rule
+single name file(one tag),will be the index?
+other's will have the corresponding content
+
+actually ,it's a bit chaos now . panled to clean it
+
+// todo: clean it
+
+## pre Blogs/
+independent now
+this file maybe to big to sync...
 
 
-##目的 Aim
-
-
-不在每次重新写像.vimrc这样的配置文件
-don't retyping and set setting files like .vimrc again and again
-
-
-有时候想在自己的电脑上写其他平台的东西,,之后同步下好了
-other platform projects but want to edit in my own computer and then synch it
-  
-  
-## etc
-各种配置文件
-
-## bin
-放实用程序,脚本的地方
-
-## lib
-编程用到的库等等
+## tmp
+even i can not know it all,
+i just forget them
