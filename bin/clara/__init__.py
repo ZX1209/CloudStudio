@@ -8,6 +8,14 @@ cwdPath = Path('.').resolve()
 homePath = cwdPath.home()
 # 
 
+def isChinese(w):
+    """isChinese
+    """
+    if w >= u'\u4E00' and w <= u'\u9FA5':
+        return True
+    else:
+        return False
+
 def mold(x,y=None):
     """
     return sqrt(x**2+y**2)
