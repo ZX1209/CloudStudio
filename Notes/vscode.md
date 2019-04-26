@@ -44,6 +44,10 @@ yes it's what i want
 
 
 # short cut
+ctrl+t go to symbol in workspace which is title or variable or function?
+ctrl+u Undo cursor position
+ctrl+k ctrl+x Trim trailing whitespace 消除行尾多余空格
+ctrl+l select current line
 ctrl+r 打开最近的文件
 ctrl+g l workbench.action.gotoLine
 ctrl+g j workbench.action.navigateToLastEditLocation
