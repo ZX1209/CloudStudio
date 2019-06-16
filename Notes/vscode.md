@@ -27,6 +27,9 @@ and use it
 
 ## Output Colorizer
 
+## VS Code Snippet Generator
+
+
 
 yapf
 
@@ -70,3 +73,30 @@ Ctrl + F2   选择当前字的所有出现 Select all occurrences of current wor
 
 Alt +单击 插入光标 Insert cursor
 Ctrl + Alt +↑/↓ 在上/下插入光标 Insert cursor above / below
+
+
+# Predefined variables examples
+Supposing that you have the following requirements:
+
+A file located at /home/your-username/your-project/folder/file.ext opened in your editor;
+The directory /home/your-username/your-project opened as your root workspace.
+So you will have the following values for each variable:
+
+${workspaceFolder} - /home/your-username/your-project
+${workspaceFolderBasename} - your-project
+${file} - /home/your-username/your-project/folder/file.ext
+${relativeFile} - folder/file.ext
+${fileBasename} - file.ext
+${fileBasenameNoExtension} - file
+${fileDirname} - /home/your-username/your-project/folder
+${fileExtname} - .ext
+${lineNumber} - line number of the cursor
+${selectedText} - text selected in your code editor
+${execPath} - location of Code.exe
+
+
+# task.json schema 全参数 模板
+https://code.visualstudio.com/docs/editor/tasks-appendix
+ps 触发参数提醒
+# launch.json schema 全参数 模板
+by invoking IntelliSense inside the launch.json string attributes.

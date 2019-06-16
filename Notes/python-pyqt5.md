@@ -1,6 +1,10 @@
-# QSS 作用范围.
-app.setStyleSheet("QStackedWidget{background-color:yellow;}")
+# 版本信息
+```py
+from PyQt5.QtCore import PYQT_CONFIGURATION
+print(PYQT_CONFIGURATION)
+```
 
+# 窗口系统
 一.QMainWindow：
 QMainWindow类提供一个带有菜单条，工具条和一个状态条的主应用程序窗口。主窗口通常提供一个大的中央窗口部件，以及周围菜单，工具条，和一个状态栏。QMainWindow窗口经常被继承，使得封装中央部件，菜单，工具条，状态栏等都变得很容易，当用户点击它的时候，相应的槽就会被调用。
 
@@ -17,7 +21,7 @@ QWidget的（新建Qt GUI应用时选择QWidget为基类）。不仅如此，其
 
 QWidget的构造函数有两个参数：“QWidget * parent =0”和“Qt::WindowFlags f = 0”。面一个参数是指父窗口部件，默认值为0，表明没有父窗口；后面一个参数是Qt::WindowFlags的枚举类型，分为窗口类型（窗口的样式）和窗口标志（更改 窗口的标题栏和边框），可以进行位或操作。
 
-ui是一个指向界面类的指针，使用“ui->”就是用来访问这个界面类里面的控件。
+# 常用对话框
 Qt提供的一些常用的对话框类型：
 QColorDialog（颜色对话框）、
 QFileDialog（文件对话框）、
@@ -29,7 +33,8 @@ QErrorMessage（错误信息对话框）
 QPageSetupDialog（页面设置对话框）、
 QPrintDialog（打印对话框）、
 QPrintPreviewDialog（打印预览对话框）。
-其他窗口部件
+
+# 其他窗口部件
 （1）QFrame类（带边框的部件的基类），其子类有
 QLabel（标签部件，显示文本或者图片）、QLCDNumber（液晶数字显示效果）、 QStackedWidget（提供了一个部件栈，可以切换多个界面）、
 QToolBox（列层叠窗口，在一个界面上达到类似抽屉的效果，可以切换页面）。
@@ -47,12 +52,6 @@ QDoubleSpinBox（设定浮点数）。
 QScrollBar（多用在QScrollArea类中实现滚动区域）、
 QSlider（多用在音量控制或多媒体播放进度等方面）、
 QDial（刻度表盘）。
----------------------
-作者：konsy_dong
-来源：CSDN
-原文：https://blog.csdn.net/sinat_36053757/article/details/70142070
-版权声明：本文为博主原创文章，转载请附上博文链接！
-
 
 
 statusBar
@@ -102,7 +101,7 @@ else:
 这里判断返回值，如果点击的是Yes按钮，我们就关闭组件和应用，否者就忽略关闭事件。
 
 
-右键菜单
+# 右键菜单
 def contextMenuEvent(self, event):
 
        cmenu = QMenu(self)
@@ -114,6 +113,17 @@ def contextMenuEvent(self, event):
 
        if action == quitAct:
            qApp.quit()
+
+# QFileDialog
+```py
+fileName, _ = QFileDialog.getOpenFileName(self, "Open Movie", './')
+
+```
+
+
+# QSS 作用范围.
+app.setStyleSheet("QStackedWidget{background-color:yellow;}")
+
 
 # mini application
 ```python
@@ -193,3 +203,25 @@ if __name__ == '__main__':
     ex = Example()
     sys.exit(app.exec_())
 ```
+# qt 定时器
+```py
+self.ob = QObject(None)
+self.ob.startTimer(10)
+self.ob.timerEvent = self.timerEvent
+```
+
+# Graphics 图形视图框架
+https://blog.csdn.net/La_vie_est_belle/article/details/86999825
+view 是对于gui用户来说的一个窗口,通过它,来看到sence,还有里面的item
+
+item.setParentItem()
+item.setPos()
+item.setPos(item.mapToscene())...
+
+item.update()
+
+scene.addItem()
+scene.setRectf()
+
+view.addScene()
+view.show()

@@ -25,3 +25,16 @@ t.start()
 
 t.join()
 ```
+
+
+# Timer
+class threading.Timer(interval, function, args=[], kwargs={})
+
+创建一个timer，在interval秒过去之后，它将以参数args和关键字参数kwargs运行function 。
+调用该函数回返回一个定时器的句柄，同时也获得了一个定时器实例。
+
+但是这时，定时器只是被创建，被没有启动，需要调用实例里面的
+
+start（）方法启动定时器。如果在定时过程中想要取消该定时器，需要使用cancel()函数。
+
+https://zhuanlan.zhihu.com/p/32094690

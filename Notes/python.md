@@ -1,3 +1,34 @@
+# 在数组中绘制图像
+cairo
+cv2
+gen points
+https://stackoverflow.com/questions/10031580/how-to-write-simple-geometric-shapes-into-numpy-arrays
+
+
+# 闭包函数 closure
+函数外自由变量,非全局
+```py
+def print_msg():
+    # print_msg 是外围函数
+    msg = "zen of python"
+    def printer():
+        # printer 是嵌套函数
+        print(msg)
+    return printer
+
+another = print_msg()
+# 输出 zen of python
+another()
+```
+在计算机科学中，闭包（Closure）是词法闭包（Lexical Closure）的简称，是引用了自由变量的函数。这个被引用的自由变量将和这个函数一同存在，即使已经离开了创造它的环境也不例外。所以，有另一种说法认为闭包是由函数和与其相关的引用环境组合而成的实体。
+
+# timeit
+python3.6 -m timeit "import typing"
+
+<!-- todo: clean this to a index -->
+# 时间日期
+datetime
+
 # python
 
 > Python language interpreter.

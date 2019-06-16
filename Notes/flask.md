@@ -59,3 +59,8 @@ session['name'] = name
 session.get('name')
 
 # flask-moment
+
+
+
+# 子域名
+https://www.jianshu.com/p/1cfc3a7e5552

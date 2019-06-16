@@ -2,6 +2,13 @@
 
 > Debian package manager.
 
+- List package contents:
+ List files 'owned' by package(s).
+`dpkg -L {{package_name}}`
+
+
+
+
 - Install a package:
 
 `dpkg -i {{/path/to/file}}`
@@ -14,9 +21,6 @@
 
 `dpkg -l {{pattern}}`
 
-- List package contents:
-
-`dpkg -L {{package_name}}`
 
 - Find out which package owns a file:
 

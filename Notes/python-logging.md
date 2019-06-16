@@ -31,3 +31,13 @@ logger.addHandler(fh)
 logger.info('this is info message')
 logger.warn('this is warn message')
 ```
+
+
+# getLogger
+
+# file config
+
+# format handle ...
+
+# cook book
+https://docs.python.org/3/howto/logging-cookbook.html#logging-cookbook

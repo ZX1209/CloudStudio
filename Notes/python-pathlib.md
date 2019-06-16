@@ -30,15 +30,18 @@ f.stat().st_size()
 # test
 f.is_dir()
 f.is_file()
-f.exists()
+f.exists() # f exists
 
 Path.cwd()
 Path.home()
 ```
 
-# 参考 https://github.com/chris1610/pbpython/blob/master/extras/Pathlib-Cheatsheet.pdf
+# 参考
+ https://github.com/chris1610/pbpython/blob/master/extras/Pathlib-Cheatsheet.pdf
 
-
+# current file path and dir
+filepath = Path().absolute()
+filedir = filepath.parent
 
 # basic
 ```py

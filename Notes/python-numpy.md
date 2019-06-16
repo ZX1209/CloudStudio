@@ -1,4 +1,16 @@
-np 会因为类型溢出
+# 图像混合?
+```py
+# Using the 'NOT' way
+not_output = cv2.bitwise_not(images[i], not_output, mask=mask[i])
+# Using the copyto way
+np.copyto(copy_output, images[i], where=mask[i][:, :, None].astype(bool))
+```
+
+# np.copyto(dst,src,where=mask)
+src to dst when cor mask is true
+
+
+# np 会因为类型溢出
 ```python
 o = np.random.randint(0,255,(5,5,3),dtype='uint8')
 co = o+30 # 可能溢出呢..
@@ -7,6 +19,7 @@ co = o+30 # 可能溢出呢..
 # 线性代数 行列式
 linalg是Linear Algebra的缩写
 np.linalg
+np.linalg.det()
 
 # np.fill
 
@@ -142,7 +155,7 @@ sin(),cos(),tan(),...
 方法  描述
 add(x1, x2, /[, out, where, casting, order, …]) 按元素添加参数。
 subtract(x1, x2, /[, out, where, casting, …])   从元素方面减去参数。
-multiply(x1, x2, /[, out, where, casting, …])   按元素计算多个参数。
+multiply(x1, x2, /[, out, where, casting, …])   按元素计算多个参数。     tips: 对应位置的元素相乘
 divide(x1, x2, /[, out, where, casting, …]) 逐个元素方式返回输入的真正除法。
 logaddexp(x1, x2, /[, out, where, casting, …])  输入的指数之和的对数。
 logaddexp2(x1, x2, /[, out, where, casting, …]) 以-2为基的输入的指数和的对数。

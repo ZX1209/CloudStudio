@@ -1,4 +1,34 @@
-## import path...
+# 坐标轴及网格线
+```py
+ax.axhline(0, color='red', lw=2)
+ax.axhline(0, color='green', lw=2)
+
+# Don't allow the axis to be on top of your data
+ax.set_axisbelow(True)
+
+# Turn on the minor TICKS, which are required for the minor GRID
+# ax.minorticks_on()
+# don't work for scaling things
+
+# Customize the major grid
+ax.grid(which='major', linestyle='-', linewidth=0.5, color='red')
+# Customize the minor grid
+ax.grid(which='minor', linestyle=':', linewidth='0.5', color='black')
+
+# or
+ax.grid(which='both')
+```
+or plt....
+orginal is axes func
+
+# axes vs axs vs figure...
+https://matplotlib.org/faq/usage_faq.html#usage
+
+
+# import path...
+
+# (直接)显示开关
+ion,ioff
 
 # 基本思路
 [subplot]
@@ -346,127 +376,6 @@ plt.show()
 
 
 
-## 动画效果参考
-
-```python
-import matplotlib.pyplot as plt
-import numpy as np
-
-np.random.seed(19680801)
-data = np.random.random((50, 50, 50))
-
-fig, ax = plt.subplots()
-
-for i in range(len(data)):
-    ax.cla()
-    ax.imshow(data[i])
-    ax.set_title("frame {}".format(i))
-    # Note that using time.sleep does *not* work here!
-    plt.pause(0.1)
-```
-
-## 参考2
-```python
-import time
-import matplotlib.pyplot as plt
-import numpy as np
-
-
-def get_memory(t):
-    "Simulate a function that returns system memory"
-    return 100 * (0.5 + 0.5 * np.sin(0.5 * np.pi * t))
-
-
-def get_cpu(t):
-    "Simulate a function that returns cpu usage"
-    return 100 * (0.5 + 0.5 * np.sin(0.2 * np.pi * (t - 0.25)))
-
-
-def get_net(t):
-    "Simulate a function that returns network bandwidth"
-    return 100 * (0.5 + 0.5 * np.sin(0.7 * np.pi * (t - 0.1)))
-
-
-def get_stats(t):
-    return get_memory(t), get_cpu(t), get_net(t)
-
-fig, ax = plt.subplots()
-ind = np.arange(1, 4)
-
-# show the figure, but do not block
-plt.show(block=False)
-
-
-pm, pc, pn = plt.bar(ind, get_stats(0))
-pm.set_facecolor('r')
-pc.set_facecolor('g')
-pn.set_facecolor('b')
-ax.set_xticks(ind)
-ax.set_xticklabels(['Memory', 'CPU', 'Bandwidth'])
-ax.set_ylim([0, 100])
-ax.set_ylabel('Percent usage')
-ax.set_title('System Monitor')
-
-start = time.time()
-for i in range(200):  # run for a little while
-    m, c, n = get_stats(i / 10.0)
-
-    # update the animated artists
-    pm.set_height(m)
-    pc.set_height(c)
-    pn.set_height(n)
-
-    # ask the canvas to re-draw itself the next time it
-    # has a chance.
-    # For most of the GUI backends this adds an event to the queue
-    # of the GUI frameworks event loop.
-    fig.canvas.draw_idle()
-    try:
-        # make sure that the GUI framework has a chance to run its event loop
-        # and clear any GUI events.  This needs to be in a try/except block
-        # because the default implementation of this method is to raise
-        # NotImplementedError
-        fig.canvas.flush_events()
-    except NotImplementedError:
-        pass
-
-stop = time.time()
-print("{fps:.1f} frames per second".format(fps=200 / (stop - start)))
-```
-
-# animation
-```py
-import numpy as np
-from matplotlib import pyplot as plt
-from matplotlib import animation
-
-fig = plt.figure()
-fig.set_dpi(100)
-fig.set_size_inches(7, 6.5)
-
-ax = plt.axes(xlim=(0, 10), ylim=(0, 10))
-patch = plt.Circle((5, -5), 0.75, fc='y')
-
-def init():
-    patch.center = (5, 5)
-    ax.add_patch(patch)
-    return patch,
-
-def animate(i):
-    x, y = patch.center
-    x = 5 + 3 * np.sin(np.radians(i))
-    y = 5 + 3 * np.cos(np.radians(i))
-    patch.center = (x, y)
-    return patch,
-
-anim = animation.FuncAnimation(fig, animate,
-                               init_func=init,
-                               frames=360,
-                               interval=20,
-                               blit=True)
-
-plt.show()
-```
 
 
 # 3d plot

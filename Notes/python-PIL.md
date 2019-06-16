@@ -1,5 +1,9 @@
 from PIL import Image
 
+# from bianry string
+Image.open(blob)
+
+# img file open
 bmpFile = Image.open(r'bmp/FLAG_B24.BMP')
 bmpFile.close()
 `

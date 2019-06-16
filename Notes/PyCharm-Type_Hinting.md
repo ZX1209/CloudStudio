@@ -1,3 +1,20 @@
+```py
+x:int = 1
+y: float = 1.0
+z: bool = True
+a: str = "test"
+s: bytes = b'test'
+
+child: bool
+if age<18:
+    child = True
+else:
+    child = False
+
+
+```
+
+
 copyed from   https://www.jetbrains.com/help/pycharm/type-hinting-in-product.html#d290117e243
 
 
