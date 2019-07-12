@@ -5,6 +5,14 @@ git merge
 
 git show-branch
 
+
+# 不对0x80以上的字符进行quote，解决git status/commit时中文文件名乱码
+git config --global core.quotepath false
+
+# show ignored files (tracked file)
+git status --ignored
+>https://stackoverflow.com/questions/466764/git-command-to-show-which-specific-files-are-ignored-by-gitignore
+
 # todo
 创建仓库不一定要登录github网站,我们实际上可以在本地通过命令行进行操作
 git init
