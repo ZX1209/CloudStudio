@@ -36,6 +36,9 @@ Path.cwd()
 Path.home()
 ```
 
+# create file
+Path.touch()
+
 # 参考
  https://github.com/chris1610/pbpython/blob/master/extras/Pathlib-Cheatsheet.pdf
 
