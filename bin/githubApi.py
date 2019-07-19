@@ -1,84 +1,86 @@
 #! python
 import requests
 import fire
-from clara import ThirdShell
-from pathlib import Path
-
-curDir = Path().cwd()
-filePath = Path().absolute()
-fileDir = filePath.parent
+# from clara import ThirdShell
 
 # code
 # functions or classes
 
-username = 'ZX1209'
-passward = 'dont sync this'  # dont sync passward
 
+class githubApi():
 
-def apiInfo():
-    """apiInfo
-    """
-    response = requests.get('https://api.github.com')
-    return response.json()
+    def __init__(self, username='ZX1209', password='dont sync this'):
+        """githubApi
+        githubApi.py --username=ZX1209 --password=replacethis login
+        """
+        self.username = username
+        self.password = password
+        if self.password == 'dont sync this':
+            print('init the class with username and password')
 
+    def apiInfo(self):
+        """apiInfo
+        """
+        response = requests.get('https://api.github.com')
+        return response.json()
 
-def login():
-    """login
-    """
-    response = requests.get('https://api.github.com/user',
-                            auth=(username, passward))
+    def login(self):
+        """login
+        """
+        response = requests.get('https://api.github.com/user',
+                                auth=(self.username, self.password))
 
-    return response.json()
+        return response.json()
 
+    def createRepo(self, repoName: str = None):
+        """createRepo
+        """
+        if repoName is None:
+            print('use dir name for repoName')
+            from pathlib import Path
 
-def createRepo(repoName: str = None):
-    """createRepo
-    """
-    if repoName is None:
-        print('use dir name for repoName')
-        repoName = curDir.name
-    response = requests.post('https://api.github.com/user/repos',
-                             json={
-                                 'name': repoName,
-                                 'description': 'auto created by github api'
-                             },
-                             auth=(username, passward))
+            curDir = Path().cwd()
+            repoName = curDir.name
 
-    return response.json()
+        response = requests.post('https://api.github.com/user/repos',
+                                 json={
+                                     'name': repoName,
+                                     'description': 'auto created by github api'
+                                 },
+                                 auth=(self.username, self.password))
 
+        return response.json()
 
-def deleteRepo(repoName='None'):
-    """deleteRepo
-    """
-    response = requests.delete(
-        f'https://api.github.com/repos/ZX1209/{repoName}',
-        auth=(username, passward))
+    def deleteRepo(self, repoName='None'):
+        """deleteRepo
+        """
+        response = requests.delete(
+            f'https://api.github.com/repos/ZX1209/{repoName}',
+            auth=(self.username, self.password))
 
-    return response.status_code
+        return response.status_code
 
+    # not done yet
+    # def initDir(self):
+    #     """initDir
+    #     """
 
-def initDir():
-    """initDir
-    """
+    #     # issue: repoName is a full path not a file name
+    #     repoName = str(curDir)
+    #     readMeFile = curDir / 'ReadMe.md'
+    #     readMeFile.touch()
 
-    # issue: repoName is a full path not a file name
-    repoName = str(curDir)
-    readMeFile = curDir / 'ReadMe.md'
-    readMeFile.touch()
+    #     self.createRepo(repoName)
 
-    createRepo(repoName)
-
-    ThirdShell.runCmdStrs([
-        "git init", "git add ReadMe.md", "git commit -m 'init a repo'",
-        f"git remote add origin https://github.com/ZX1209/{repoName}",
-        "git push -u origin master"
-    ])
+    #     ThirdShell.runCmdStrs([
+    #         "git init", "git add ReadMe.md", "git commit -m 'init a repo'",
+    #         f"git remote add origin https://github.com/ZX1209/{repoName}",
+    #         "git push -u origin master"
+    #     ])
 
 
 if __name__ == '__main__':
-    if passward == 'dont sync this':
-        print('need username and passward to login')
-    fire.Fire()
+    fire.Fire(githubApi)
 
 # command arguments
 # --title="this is title"
