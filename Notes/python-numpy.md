@@ -1,3 +1,6 @@
+# 乘阶
+numpy.math.factorial(3)
+
 # 图像混合?
 ```py
 # Using the 'NOT' way

@@ -1,3 +1,13 @@
+
+select
+where
+join
+
+get
+
+
+
+
 ## 总结
 类(继承 peewee.Model) 对应 一个表
 变量(无需类对象) 对应列 类型由peewee.filed 控制
@@ -51,21 +61,21 @@ In this tutorial, we work with SQLite database.
 
 ## Peewee field types
 Field types in a Peewee model define the storage type of the model. They are translated to the corresponding database column types.
-Field  Type |	SQLite |	PostgreSQL |	MySQL
-|---|---|---|---|
-CharField |	varchar |	varchar |	varchar
-TextField |	text |	text |	longtext
-DateTimeField |	datetime |	timestamp |	datetime
-IntegerField |	integer |	integer |	integer
-BooleanField |	smallint |	boolean |	bool
-FloatField |	real |	real |	real
-DoubleField |	real |	double | precision	double precision
-BigIntegerField |	integer |	bigint |	bigint
-DecimalField |	decimal |	numeric |	numeric
-PrimaryKeyField |	integer |	serial |	integer
-ForeignKeyField |	integer |	integer |	integer
-DateField |	date |	date |	date
-TimeField |	time |	time |	time
+| Field  Type     | SQLite   | PostgreSQL | MySQL                     |
+|-----------------|----------|------------|---------------------------|
+| CharField       | varchar  | varchar    | varchar                   |
+| TextField       | text     | text       | longtext                  |
+| DateTimeField   | datetime | timestamp  | datetime                  |
+| IntegerField    | integer  | integer    | integer                   |
+| BooleanField    | smallint | boolean    | bool                      |
+| FloatField      | real     | real       | real                      |
+| DoubleField     | real     | double     | precision	double precision |
+| BigIntegerField | integer  | bigint     | bigint                    |
+| DecimalField    | decimal  | numeric    | numeric                   |
+| PrimaryKeyField | integer  | serial     | integer                   |
+| ForeignKeyField | integer  | integer    | integer                   |
+| DateField       | date     | date       | date                      |
+| TimeField       | time     | time       | time                      |
 This table lists the Peewee field types and the corresponding SQLite, PostgreSQL and MySQL column types.
 
 ## Peewee model definition

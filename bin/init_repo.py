@@ -1,6 +1,6 @@
-#!python
+#! python
 import argparse
-import sys
+# import sys
 from clara import ThirdShell
 import requests
 from pathlib import Path

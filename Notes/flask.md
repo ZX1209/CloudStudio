@@ -4,7 +4,8 @@ cd flaskdir
 virtualenv venv
 
 #active virtual env
-. venv/bin/activate
+. venv/bin/activate    # bash
+venv\Scripts\activate    # cmd
 
 #deactive vitual env
 deactivate

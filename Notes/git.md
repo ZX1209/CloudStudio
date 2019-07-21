@@ -28,7 +28,7 @@ git remote add origin https://github.com/用户名/仓库名.git
 # add remote node
 git remote add origin {remote_url}
 git push -u origin master
-git push --set-upstream origin master
+git push --set-upstream origin master # 设置默认 push 目标
 
 # 修改上一次commit信息
 git commit --amend
