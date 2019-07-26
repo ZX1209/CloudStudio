@@ -5,6 +5,13 @@ git merge
 
 git show-branch
 
+# log 更改的文件
+git log --stat
+
+# 更改上次的commit
+git commit --amend
+(git pull && git push)
+
 
 # 不对0x80以上的字符进行quote，解决git status/commit时中文文件名乱码
 git config --global core.quotepath false
@@ -30,8 +37,6 @@ git remote add origin {remote_url}
 git push -u origin master
 git push --set-upstream origin master # 设置默认 push 目标
 
-# 修改上一次commit信息
-git commit --amend
 
 # 取消上一次 commit (不会删除文件,只是版本树变化)
 git reset HEAD^
@@ -115,9 +120,6 @@ git stash pop
 # from the stash list
 git stash apply stash@{6}
 
-
-# To edit previous commit message
-git commit --amend
 
 # Git commit in the past
 git commit --date="`date --date='2 day ago'`"

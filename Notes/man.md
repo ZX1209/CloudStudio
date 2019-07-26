@@ -1,4 +1,7 @@
 # man
+- short description of a command:
+
+`man -f {{keyword}}`
 
 > Format and display manual pages.
 
@@ -17,3 +20,6 @@
 - Do a keyword search for manpages containing a search string:
 
 `man -k {{keyword}}`
+
+
+
