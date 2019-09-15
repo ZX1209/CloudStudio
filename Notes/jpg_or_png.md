@@ -1,0 +1,1 @@
+JPEGs are for photographs and realistic images. PNGs are for line art, text-heavy images, and images with few colors. GIFs are just fail.
