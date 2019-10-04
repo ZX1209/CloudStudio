@@ -16,6 +16,9 @@ ctrl + d; 取消选区
 
 ctrl enter ; 路径变选区
 
+笔:
+alt 鼠标右击拖动;左右直径,上下硬度
+
 钢笔:
 alt 路径控制角点???
 ctrl 直接选择工具
@@ -30,6 +33,7 @@ ctrl m;打开曲线
 
 ctrl shift i 反选
 
+ctrl d 重复上次操作
 
 
 

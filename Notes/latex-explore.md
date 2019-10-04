@@ -9,3 +9,12 @@ $$
 $$
 \alpha
 $$
+
+
+### 分段函数
+\begin{cases}
+\end{cases}
+括号
+
+& 空格
+\\ 换行
