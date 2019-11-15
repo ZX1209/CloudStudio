@@ -1,6 +1,10 @@
 # 极坐标曲线
 e=Curve((a * theta;theta),theta,-π,π)
 
+# 曲线参数式,复合函数
+e=Curve(g(t),h(t),t,a,b)
+
+
 # Tangent
 切线
 

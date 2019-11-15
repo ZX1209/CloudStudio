@@ -1,3 +1,7 @@
+# 显示数据的hex格式?
+see python-struct.md
+
+
 # todo 在数组中绘制图像
 cairo
 cv2
