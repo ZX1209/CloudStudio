@@ -3,10 +3,10 @@ import yaml
 
 yamlstr = """
 this is something:
-    - one: other
-    - two
-    - three
-
+    _str: something
+    a: a
+    b: b
+str: some
 this is another key: [1,2,3,4]
 """
 

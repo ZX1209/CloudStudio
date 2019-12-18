@@ -1,3 +1,11 @@
+# display 属性
+block: 占整行
+inline: 可在文字内
+none: 隐藏,不占位置
+
+# max-width
+
+
 # 隐藏
 display: none;
 
@@ -17,6 +25,7 @@ overline : 　上划线
 # 整齐排列
 float:left
 > 或者是什么grid的,,不怎么用呢...
+嗯,,clear: left;谨慎
 
 # display 样式
 inline

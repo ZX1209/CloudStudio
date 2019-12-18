@@ -4,6 +4,9 @@ key: value
 - one
 - two
 
+数组也可以采用行内表示法。
+animal: [Cat, Dog]
+
 # 纯量
 ?
 
