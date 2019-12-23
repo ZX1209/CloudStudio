@@ -5,6 +5,12 @@ git merge
 
 git show-branch
 
+# git 永久删除文件
+git filter-branch --force --index-filter "git rm --cached --ignore-unmatch {path to you file}" --prune-empty --tag-name-filter cat -- --all
+
+# 之后强制推送
+git push origin --force --all
+
 # log 更改的文件
 git log --stat
 
