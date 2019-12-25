@@ -1,3 +1,14 @@
+# pip 安装编译不了?
+试试下载 whl文件
+https://www.lfd.uci.edu/~gohlke/pythonlibs/
+
+# update source list for china
+pip install pip -U
+pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+
+## tmp use
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple some-package
+
 # Search for packages
 pip search SomePackage
 
