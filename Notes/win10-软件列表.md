@@ -52,3 +52,36 @@ filezlia
 sqlitestudio?
 
 天翼...
+
+zeal
+
+steam?
+
+
+
+有道?
+
+source tree
+
+万彩办公大师?
+
+sumatraPDF
+
+typora
+
+xshell
+
+# 资料备份
+ENPASS ;转移到 lastpass???
+
+anki
+
+vscode
+
+sublimetext 配置?
+
+calibre 书库??
+
+
+
+

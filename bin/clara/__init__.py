@@ -1,7 +1,7 @@
 import math
 from bisect import bisect_left
 from pathlib import Path
-
+from typing import List
 # don't know if cwdPath always right
 cwdPath = Path('.').resolve()
 homePath = cwdPath.home()
@@ -33,7 +33,7 @@ def mold(x, y=None):
     return math.sqrt(x**2 + y**2)
 
 
-def vectorAngle(v1: [int, int], v2):
+def vectorAngle(v1, v2):
     angle = math.atan2(v1[1], v1[0]) - math.atan2(v2[1], v2[0])
 
     if angle > math.pi:
@@ -44,7 +44,7 @@ def vectorAngle(v1: [int, int], v2):
     return angle
 
 
-def low_around(nums: list, target: int):
+def low_around(nums, target):
     nums.sort()
     for i, num in enumerate(nums):
         if num >= target:
@@ -52,7 +52,7 @@ def low_around(nums: list, target: int):
     return nums[i - 1], num
 
 
-def low_around_index(nums: list, target: int):
+def low_around_index(nums, target):
     tmpnums = sorted(nums)
     for i, num in enumerate(tmpnums):
         if num >= target:
@@ -60,7 +60,7 @@ def low_around_index(nums: list, target: int):
     return nums.index(tmpnums[i - 1]), nums.index(num)
 
 
-def high_around_index(nums: list, target: int):
+def high_around_index(nums, target: int):
     tmpnums = sorted(nums, reverse=True)
     for i, num in enumerate(tmpnums):
         if num <= target:
