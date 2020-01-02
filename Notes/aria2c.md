@@ -1,4 +1,6 @@
 # aria2c
+# rpc server
+aria2c --conf-path=<PATH> -D 
 
 > Fast download utility.
 > Supports HTTP(S), FTP, SFTP, BitTorrent, and Metalink.

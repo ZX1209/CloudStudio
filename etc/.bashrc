@@ -233,3 +233,28 @@ export  LD_LIBRARY_PATH=/usr/local/cuda-9.0/lib64$LD_LIBRARY_PATH
 
 PYTHONPATH=~/CloudStudio/bin/
 export PYTHONPATH
+
+# export http_proxy=http://127.0.0.1:1080/
+# export https_proxy=$http_proxy
+# export ftp_proxy=$http_proxy
+# export rsync_proxy=$http_proxy
+# export no_proxy="localhost,127.0.0.1,localaddress,.localdomain.com"
+# export ALL_PROXY=http://127.0.0.1:1080/
+
+# flutter start
+export PATH=$PATH:/home/gl/Projects/Flutter-exploring/flutter/bin/
+
+export PUB_HOSTED_URL=https://pub.flutter-io.cn
+export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
+
+
+export ENABLE_FLUTTER_DESKTOP=true
+# flutter end
+
+# crontab start
+export VISUAL=/home/gl/CloudStudio/bin/sublime-wait.sh
+export EDITOR=/home/gl/CloudStudio/bin/sublime-wait.sh
+
+# EDITOR
+
+# crontab end

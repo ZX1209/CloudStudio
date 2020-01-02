@@ -5,6 +5,13 @@ git merge
 
 git show-branch
 
+# 获取 上游 推送
+git remote -v 
+git remote add upstream git@github.com:xxx/xxx.git
+git fetch upstream
+git merge upstream/master
+git push 
+
 # git 永久删除文件
 git filter-branch --force --index-filter "git rm --cached --ignore-unmatch {path to you file}" --prune-empty --tag-name-filter cat -- --all
 

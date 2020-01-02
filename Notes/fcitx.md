@@ -1,0 +1,1 @@
+https://forum.suse.org.cn/t/can-not-use-fcitx/1728/3

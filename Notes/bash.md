@@ -1,3 +1,16 @@
+# 重定向输入输出
+Example, redirecting standard out with >
+
+For stderr redirection use 2>
+
+redirect stderr to stdout 2>&1
+
+## 如何分别输出(stdout)与错误(stderr)
+重定向到不同文件
+
+
+
+
 # 改变密码
 ## passwd username 
 ## passwd username -d

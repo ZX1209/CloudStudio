@@ -1,6 +1,6 @@
 ## 基本顺序
 
-sync /from /to
+rsync -a /from /to
 
 ## somthing/ and something
 

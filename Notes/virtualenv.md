@@ -1,4 +1,16 @@
 # virtualenv
+#init virtual env
+mkdir flaskdir
+cd flaskdir
+virtualenv venv
+
+#active virtual env
+. venv/bin/activate    # bash
+venv\Scripts\activate    # cmd
+
+#deactive vitual env
+deactivate
+
 
 > Create virtual isolated Python environments.
 
