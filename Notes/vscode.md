@@ -1,3 +1,10 @@
+# env workspace specific
+"terminal.integrated.env.linux": {
+    "PATH": "${env:PATH}:/tmp/sslocal.log"
+}
+
+
+
 "python.jediEnabled": false
 
 vscode note??? what for

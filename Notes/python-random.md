@@ -18,7 +18,7 @@ rd.shuffle(x)
 print(x)
 
 # 搅乱序列(不可变)
-# Return a k length list of unique elements
+# Return a k length list of unique elementsd
 # chosen from the population sequence or set.
 # Used for random sampling without *replacement*.
 tmp = ("up", "down", "left", "right", "jump", "neer")
