@@ -1,3 +1,8 @@
+# yyyy-mm-dd 
+date +"%F"
+
+
+
 # date
 
 > Set or display the system date.
