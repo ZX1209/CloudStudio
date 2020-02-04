@@ -1,6 +1,3 @@
-
-
-
 [Desktop Entry]
 Name=Trello Client
 Exec=<path to the unzipped Trello folder>/Trello

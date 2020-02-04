@@ -226,11 +226,11 @@ unset __conda_setup
 # <<< conda init <<<
 
 
-# cuda init
-export  PATH=/usr/local/cuda-9.0/bin:$PATH
-export  LD_LIBRARY_PATH=/usr/local/cuda-9.0/lib64$LD_LIBRARY_PATH
+# cuda start
+# export  PATH=/usr/local/cuda-9.0/bin:$PATH
+# export  LD_LIBRARY_PATH=/usr/local/cuda-9.0/lib64$LD_LIBRARY_PATH
 
-
+# cund end
 PYTHONPATH=~/CloudStudio/bin/
 export PYTHONPATH
 
@@ -242,7 +242,8 @@ export PYTHONPATH
 # export ALL_PROXY=http://127.0.0.1:1080/
 
 # flutter start
-export PATH=$PATH:/home/gl/Projects/Flutter-exploring/flutter/bin/
+export FLUTTER_PATH=/home/gl/Archive/Category-AppData/Linux/Flutter/flutter/bin/
+export PATH=$PATH:$FLUTTER_PATH
 
 export PUB_HOSTED_URL=https://pub.flutter-io.cn
 export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
@@ -258,3 +259,20 @@ export EDITOR=/home/gl/CloudStudio/bin/sublime-wait.sh
 # EDITOR
 
 # crontab end
+
+# andriod start
+# export ANDROID_HOME=/home/gl/Archive/Category-AppData/Linux/android-sdk/
+# export PATH=$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$PATH
+# andriod end
+
+# java start
+# export JAVA_HOME=/usr/lib/jdk1.8.0_212/
+# export JRE_HOME=${JAVA_HOME}/jre
+# export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib
+# export PATH=$PATH:${JAVA_HOME}/bin
+
+# java end
+
+# gradle?
+# export GRADLE_OPTS='-DsocksProxyHost=127.0.0.1 -DsocksProxyPort=1080'
+# gradle end

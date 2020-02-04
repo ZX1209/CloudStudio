@@ -2,6 +2,8 @@
 mv tldr-notes notes-others
 //mv {文件或文件夹命} {你想要替换的名称}
 
+# 移动文件夹
+mv {源文件地址} {目标文件地址(父目录)}
 
 # Move a file from one place to another
 mv ~/Desktop/foo.txt ~/Documents/foo.txt
