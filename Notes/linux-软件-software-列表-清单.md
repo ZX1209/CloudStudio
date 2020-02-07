@@ -47,7 +47,7 @@ python3
 enpass
 
 
-filezlia
+filezllia : filezilla
 
 sqlitestudio?: sqlitestudio
 
@@ -55,17 +55,18 @@ sqlitestudio?: sqlitestudio
 
 zeal: zeal
 
-steam?: webpage?
+steam?: webpage? steam linux
 
 
 
 有道? : 
+crow translate
 
 source tree: gitkraken
 
 万彩办公大师?
 
-sumatraPDF
+sumatraPDF : 
 
 typora
 

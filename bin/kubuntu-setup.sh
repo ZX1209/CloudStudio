@@ -22,14 +22,14 @@ sudo apt dist-upgrade
 
 
 # shadowsocks
-sudo apt install shadowsocks-libev
+sudo apt install shadowsocks-libev 
 
 # sslocal
 # https://wiki.archlinux.org/index.php/Shadowsocks_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)
 
 
 # git
-sudo apt-get install git -y
+sudo apt-get install git
 
 # sublime text 3
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
@@ -41,6 +41,52 @@ echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sou
 sudo apt-get update
 sudo apt-get install sublime-text
 
-# albert
+
+
+# flameshot
+sudo apt install flameshot
+
+# zeal
+sudo apt install zeal
+
+# guake termianl
+sudo apt install guake
+sudo apt install gir1.2-wnck-3.0
+
+# fsearch
+sudo add-apt-repository ppa:christian-boxdoerfer/fsearch-daily
+sudo apt update 
+sudo apt install fsearch-trunk
+
+# on debian
+# $ sudo apt install git build-essential automake autoconf libtool pkg-config intltool autoconf-archive libpcre3-dev libglib2.0-dev libgtk-3-dev libxml2-utils
+# $ git clone https://github.com/cboxdoerfer/fsearch.git
+# $ cd fsearch
+# $ ./autogen.sh
+# $ ./configure
+# $ make && sudo make install
+
+# Is because other exception raised so given org.guake3.RemoteContro: no such name exception.
+
+# At the last line, it shows that it didn't find Wnck:
+
+#   File "/usr/lib64/python3.7/site-packages/gi/__init__.py", line 129, in require_version
+#     raise ValueError('Namespace %s not available' % namespace)
+# ValueError: Namespace Wnck not available
+# As @freefcw mention, install gir1.2-wnck-3.0 can solve this problem.
+
 
 # file struct APT
+
+
+## unable to apt install software
+
+# wps
+
+# freefilesync or sync?
+
+# albert
+
+# crow translate
+
+
