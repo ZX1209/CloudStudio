@@ -234,12 +234,15 @@ unset __conda_setup
 PYTHONPATH=~/CloudStudio/bin/
 export PYTHONPATH
 
-# export http_proxy=http://127.0.0.1:1080/
-# export https_proxy=$http_proxy
-# export ftp_proxy=$http_proxy
-# export rsync_proxy=$http_proxy
-# export no_proxy="localhost,127.0.0.1,localaddress,.localdomain.com"
-# export ALL_PROXY=http://127.0.0.1:1080/
+# cli proxy start
+# privoxy port
+export http_proxy=http://127.0.0.1:8118/
+export https_proxy=$http_proxy
+export ftp_proxy=$http_proxy
+export rsync_proxy=$http_proxy
+export no_proxy="localhost,127.0.0.1,localaddress,.localdomain.com"
+export ALL_PROXY=http://127.0.0.1:8118/
+# cli proxy end
 
 # flutter start
 export FLUTTER_PATH=/home/gl/Archive/Category-AppData/Linux/Flutter/flutter/bin/
