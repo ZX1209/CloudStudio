@@ -1,42 +1,56 @@
-# win10 软件列表
+git
 
-## tmp
-everything: fsearch
-shadowsocks: sslocal|ss-qt
-chrome: chrome|firefox
-snipaste: flameshot
-QTranslate: crow-translate
+fsearch
+
+shadowsocks-libdev
+
+chrome|firefox
+
+flameshot
+
+dolphin
+
+filelight want square
+
+mpv
+
+zeal
+
+guake
+
+
+
+
+
+# cant apt software
 
 vscode
-sublimetext
 
-xyplore: dolphin
+sublimetext 3
 
-spacesniff: qdirstat|filelight
-
-freefilesync: freefilesync|rsync
-
-dism++
+crow-translate
 
 
-印象笔记: nixnote2
+freefilesync|rsync
 
-mpv: mpv
 
-banzip: ark?
+
+nixnote2
+
+
+ark? unzip
 
 heidisql : DBeaver
 draw.io: dia?
 
-百度网盘?: nothing
+bypy
 
 mstodo: 
 
-cpuid: portable
+cpuid portable
 
-diskgenius: gparted
+kde partiong manager
 
-git:git
 
 iobit unlocker
 encrpyto
@@ -46,25 +60,17 @@ python3
 
 enpass
 
+filezilla
 
-filezllia : filezilla
+sqlitestudio
 
-sqlitestudio?: sqlitestudio
-
-天翼...
-
-zeal: zeal
 
 steam?: webpage? steam linux
 
-
-
-有道? : 
 crow translate
 
-source tree: gitkraken
+gitkraken
 
-万彩办公大师?
 
 sumatraPDF : 
 
@@ -79,9 +85,9 @@ anki
 
 vscode
 
-sublimetext 配置?
+sublimetext
 
-calibre 书库??
+calibre
 
 
 
