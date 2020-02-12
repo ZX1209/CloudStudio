@@ -240,7 +240,7 @@ export http_proxy=http://127.0.0.1:8118/
 export https_proxy=$http_proxy
 export ftp_proxy=$http_proxy
 export rsync_proxy=$http_proxy
-export no_proxy="localhost,127.0.0.1,localaddress,.localdomain.com"
+export no_proxy="localhost, 127.0.0.1, ::1"
 export ALL_PROXY=http://127.0.0.1:8118/
 # cli proxy end
 
@@ -248,11 +248,12 @@ export ALL_PROXY=http://127.0.0.1:8118/
 export FLUTTER_PATH=/home/gl/Archive/Category-AppData/Linux/Flutter/flutter/bin/
 export PATH=$PATH:$FLUTTER_PATH
 
-export PUB_HOSTED_URL=https://pub.flutter-io.cn
-export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
+# export PUB_HOSTED_URL=https://pub.flutter-io.cn
+# export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
 
 
 export ENABLE_FLUTTER_DESKTOP=true
+
 # flutter end
 
 # crontab start
@@ -279,3 +280,11 @@ export EDITOR=/home/gl/CloudStudio/bin/sublime-wait.sh
 # gradle?
 # export GRADLE_OPTS='-DsocksProxyHost=127.0.0.1 -DsocksProxyPort=1080'
 # gradle end
+
+# alias start
+alias python=python3
+alias ipython=ipython3
+alias py=python3
+alias ipy=ipython3
+
+# alias end
