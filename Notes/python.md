@@ -3,7 +3,9 @@
 #!/usr/bin/env python3
 ```
 
-
+# 检测 数据类型
+type()
+isinstance()
 
 
 
