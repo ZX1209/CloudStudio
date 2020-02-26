@@ -1,3 +1,4 @@
+# index
 js.md
 
 js-dom
@@ -8,6 +9,12 @@ window, navigator, screen, history, location
 js-$special
 
 js-synatx
+
+# js 原生选择器
+document.queryAll("div.video")
+
+# forEach
+array.forEach(function(value,index,array){console.log(value)})
 
 # JavaScript 对象
 JS Array
