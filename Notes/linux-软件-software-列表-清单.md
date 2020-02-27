@@ -18,7 +18,7 @@ zeal
 
 guake
 
-
+jupyter
 
 
 
