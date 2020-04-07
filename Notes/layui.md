@@ -339,7 +339,7 @@ layui-table
             ...
         ...
 
-table.layui-table>(colgroup>(col[width="100px"]{定义表格大小等})*3+(thead>tr>th*3)+(tbody>(tr>td*3)*3)
+table.layui-table>(colgroup>(col[width="100px"]{定义表格大小等})*3+(thead>tr>th*3)+(tbody>(tr>td*3)*3))
 
 属性名 属性值 备注
 lay-even    无   用于开启 隔行 背景，可与其它属性一起使用

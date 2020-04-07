@@ -1,3 +1,7 @@
+# lsof
+lsof
+
+
 # 重定向输入输出
 Example, redirecting standard out with >
 
@@ -8,6 +12,15 @@ redirect stderr to stdout 2>&1
 ## 如何分别输出(stdout)与错误(stderr)
 重定向到不同文件
 
+# 定义一个新函数
+function myfunc() {
+    # $1 代表第一个参数，$N 代表第 N 个参数
+    # $# 代表参数个数
+    # $0 代表被调用者自身的名字
+    # $@ 代表所有参数，类型是个数组，想传递所有参数给其他命令用 cmd "$@" 
+    # $* 空格链接起来的所有参数，类型是字符串
+    {shell commands ...}
+}
 
 
 

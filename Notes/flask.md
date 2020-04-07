@@ -1,3 +1,9 @@
+# range 响应
+视频流式加载
+```py
+filename = intoPath.resolve()
+return send_file(filename, attachment_filename=filename, conditional=True)
+```
 #init virtual env
 mkdir flaskdir
 cd flaskdir

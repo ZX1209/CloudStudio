@@ -1,4 +1,12 @@
-# ls
+# 每行显示一个文件
+ls -1
+
+# 通配符过滤(留下)
+```bash
+ls *.py
+ls --file-type *.py
+```
+
 
 > List directory contents.
 

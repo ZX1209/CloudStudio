@@ -5,6 +5,13 @@ ln -s /path/to/the/target/file/ofdirectory name_of_symlink
 unlink name_of_symlink
 //rm -rf name_of_symlink
 
+# 硬链接
+ln path link_name
+
+# 创建目录软链接
+ln -sv path link_name
+
+
 # To create a symlink:
 ln -s path/to/the/target/directory name-of-symlink
 

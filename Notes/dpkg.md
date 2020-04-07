@@ -1,3 +1,7 @@
+sudo dpkg -i {{ package_name }}
+sudo apt --fix-broken install
+
+
 # dpkg
 
 > Debian package manager.

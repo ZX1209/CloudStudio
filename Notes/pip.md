@@ -1,3 +1,8 @@
+# free and install
+pip install -r requirement.txt
+pip freeze > requirement.txt
+
+
 # pip 安装编译不了?
 试试下载 whl文件
 https://www.lfd.uci.edu/~gohlke/pythonlibs/

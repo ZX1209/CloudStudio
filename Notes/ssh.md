@@ -1,3 +1,30 @@
+# ssh config
+```
+Host tvps
+  HostName 129.211.86.00
+  User ubuntu
+  Port 22
+  IdentityFile /home/gl/Tmp/Download/tencentkey
+```
+Port 22 要注意,不能写在地址后面
+Host,HostName意义很迷啊
+
+
+
+`make sure that ~/.ssh/config is right (no port after ip) `
+
+
+# 使用指南
+（1）远程主机收到用户的登录请求，把自己的公钥发给用户。（2）用户使用这个公钥，将登录密码加密后，发送回来。（3）远程主机用自己的私钥，解密登录密码，如果密码正确，就同意用户登录。
+
+
+
+# 常用参数
+-p 222
+指定 222 端口
+
+
+
 # ssh
 
 > Secure Shell is a protocol used to securely log onto remote systems.

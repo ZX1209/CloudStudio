@@ -1,15 +1,40 @@
-# sqlite3
+先是数据库,再是一个个储存数据模式的表
 
-> The command-line interface to SQLite 3, which is a self-contained file-based embedded SQL engine.
+# SQLite数据类型的类型SQLite存储类
+SQLite数据库中存储的值是以下存储类之一：
 
-- Start an interactive shell with a new database:
+NULL
+表示值为空(null)值。
 
-`sqlite3`
+INTEGER
+表示值是一个有符号整数，根据值的大小存储在1,2,3,4,6或8个字节中。
 
-- Open an interactive shell against an existing database:
+REAL
+表示值是一个浮点值，存储为8位IEEE浮点数。
 
-`sqlite3 {{path/to/database.sqlite3}}`
+text
+表示值是一个文本字符串，使用数据库编码(utf-8，utf-16be或utf-16le)存储
 
-- Execute an SQL statement against a database and then exit:
+BLOB
+表示值是一个数据块，与输入的数据完全相同。
 
-`sqlite3 {{path/to/database.sqlite3}} '{{SELECT * FROM some_table;}}'`
+
+
+# 命令分类
+SQLite命令与SQL命令类似。 有三种类型的SQLite命令：
+
+DDL：数据定义语言DML：数据操作语言DQL：数据查询语言
+数据定义语言数据定义语言中主要有三个命令：
+
+CREATE：此命令用于创建表，数据库中的表或其他对象的视图。
+ALTER：此命令用于修改现有的数据库对象，如表。
+DROP：DROP命令用于删除整个表，数据库中的表或其他对象的视图。
+
+数据操作语言数据操作语言中主要有三个命令：
+
+INSERT：此命令用于创建记录。
+UPDATE：用于修改记录。
+DELETE：用于删除记录。
+
+数据查询语言
+SELECT：此命令用于从一个或多个表中检索某些记录。

@@ -1,3 +1,30 @@
+Name: One Dark Flatland Monokai
+Id: reblws.one-dark-flatland-monokai
+Description: Flatland Monokai syntax colors with a One Dark editor shell
+Version: 0.1.0
+Publisher: Enrico Baculinao
+VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=reblws.one-dark-flatland-monokai
+
+# syntax hightlight
+https://code.visualstudio.com/api/language-extensions/syntax-highlight-guide#scope-inspector
+inspect scope
+```json
+"editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": "keyword.declaration.dart",
+                "settings": {
+                    "foreground": "#fa6f39"
+                }
+            }
+        ]
+    }
+}
+```
+
+# theme-color
+https://code.visualstudio.com/api/references/theme-color
+
 # env workspace specific
 "terminal.integrated.env.linux": {
     "PATH": "${env:PATH}:/tmp/sslocal.log"
@@ -51,7 +78,8 @@ yes it's what i want
             "text": "python $(wslpath '${file}')\n"
         }
     },
-
+## task can also do that
+see vscode-tasks.md
 
 # short cut
 ctrl+t go to symbol in workspace which is title or variable or function?

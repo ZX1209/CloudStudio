@@ -1,3 +1,6 @@
+# 监控文件变化的tail
+tail -f 
+
 # tail
 
 > Display the last part of a file.

@@ -3,6 +3,7 @@ time.gmtime(0)
 
 # 获取秒数
 time.time()
+Return the time in seconds since the epoch as a floating point number. 
 
 # 获取当地时间 str
 ```py

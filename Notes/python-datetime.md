@@ -1,3 +1,12 @@
+# Subclass relationships:
+timedelta
+tzinfo
+    timezone
+time
+date
+    datetime
+
+
 import datetime
 import pytz    # for time zone
 

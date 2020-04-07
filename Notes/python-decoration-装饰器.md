@@ -74,7 +74,7 @@ def time_ruler(func):
 # ipython %%time
 
 ```
-
+顾顾
 可以看到，`log`函数接收一个函数作为参数，并返回一个新的`wrapper`函数。
 
 copyed from  https://www.jianshu.com/p/f51dbe1eaa4d

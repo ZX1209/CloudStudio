@@ -6,7 +6,7 @@ git merge
 git show-branch
 
 # 文件权限变更忽略
-git config core.filemode false
+git config --global core.filemode false
 .git/config;filemode=true
 
 # 获取 上游 推送
