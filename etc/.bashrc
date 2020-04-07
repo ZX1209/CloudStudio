@@ -248,11 +248,13 @@ export ALL_PROXY=http://127.0.0.1:8118/
 export FLUTTER_PATH=/home/gl/Archive/Category-AppData/Linux/Flutter/flutter/bin/
 export PATH=$PATH:$FLUTTER_PATH
 
-# export PUB_HOSTED_URL=https://pub.flutter-io.cn
-# export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
+export PUB_HOSTED_URL=https://pub.flutter-io.cn
+export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
 
 
-export ENABLE_FLUTTER_DESKTOP=true
+# export ENABLE_FLUTTER_DESKTOP=true
+
+# flutter config --enable-web
 
 # flutter end
 
@@ -288,3 +290,12 @@ alias py=python3
 alias ipy=ipython3
 
 # alias end
+
+# func start
+
+function applist(){
+    echo $1 >> ~/CloudStudio/tmp/applist.txt 
+    
+}
+
+# func end
