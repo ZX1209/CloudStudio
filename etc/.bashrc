@@ -267,8 +267,8 @@ export EDITOR=/home/gl/CloudStudio/bin/sublime-wait.sh
 # crontab end
 
 # andriod start
-# export ANDROID_HOME=/home/gl/Archive/Category-AppData/Linux/android-sdk/
-# export PATH=$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$PATH
+export ANDROID_HOME=/home/gl/Archive/Category-AppData/Linux/android-sdk/
+export PATH=$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$PATH
 # andriod end
 
 # java start

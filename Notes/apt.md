@@ -1,3 +1,7 @@
+# upgrade only one package
+apt install {{ package_name }}
+apt-get --only-upgrade install {{ package_name }}
+
 # To search a package:
 apt search package
 

@@ -1,3 +1,10 @@
+flutter 初见,应该算是一个静态的UI框架,
+注意,静态意味着消息难以传递的,无法随意刷新状态.一些功能必须要第三方包才能有好的实现方式
+而且,dart的future特性,意味着,接受信息
+都要首先添加一个futurebuilder或者streambuilder之类
+不然就是future噩梦
+甚至觉得我要先精通他才能做好一个简单的应用啊啊啊.
+
 
 
 # basic layout

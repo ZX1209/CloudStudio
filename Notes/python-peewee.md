@@ -7,6 +7,22 @@ get
 
 
 
+## select
+```py
+query = (Note
+         .select(Note.content, Note.timestamp, Person.first, Person.last)
+         .join(Person, on=(Note.person_id == Person.id))
+         .where(Note.timestamp >= datetime.date(2018, 1, 1))
+         .order_by(Note.timestamp)
+         .namedtuples())
+
+for row in query:
+    print(row.timestamp, '-', row.content, '-', row.first, row.last)
+
+tmpi = Item.select().where((Item.iid == iid) & (Item.title == title)).get()
+```
+
+> http://docs.peewee-orm.com/en/latest/peewee/query_operators.html
 
 ## 总结
 类(继承 peewee.Model) 对应 一个表
@@ -28,6 +44,11 @@ Note.update(created=dateime.date(2018,10,27)).where(Note.id==1)
 
 execution 有
 select(),where(),get(),limit(),count(),sql(),offset()
+ 这些都有不同的职能,注意
+ 不要 Item.select(Item.due>today())
+ 要 Item.select(Item.due,Item.title).where(Item.due>today())
+ 跟sql语句差不多,毕竟是生成的
+
 order_by(),Note.created.desc()
 delete_by_id()
 
@@ -389,4 +410,12 @@ for reservation in customer.reservations:
 
 The customer instance has a property `reservations`, which contains the corresponding reservations.
 
+
+# tmp
+[(i.iid, i.title) for i in self.curList.todoitems]
+
 > http://zetcode.com/python/peewee/
+# ref
+> http://docs.peewee-orm.com/en/latest/peewee/interactive.html
+> https://geek-docs.com/python/python-tutorial/python-peewee.html#Peewee_where-2
+> https://mozillazg.com/2015/03/peewee-quickstart-zh-cn.html#hidid5

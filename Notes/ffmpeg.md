@@ -34,6 +34,25 @@ $ ffmpeg \
 
 下面是一个例子。
 
+## 快速截图 
+> -ss 放在最前面
+> 指定输出编码 -vcodec
+[
+	"ffmpeg",
+	"-ss",
+	"00:02:00.000",
+	"-y",
+	"-i",
+	str(item),
+	"-r",
+	"1",
+	"-vframes",
+	"1",
+	"-an",
+	"-vcodec",
+	"mjpeg",
+	str(picOutBase / (str(item.stem) + ".jpg")),
+	]
 
 $ ffmpeg \
 -y \ # 全局参数

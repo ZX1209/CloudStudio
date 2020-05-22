@@ -302,3 +302,6 @@ anki/storage.py 206
 2.联系的概念
 Anki本身对于间隔重复的概念还是很好的实现了，但我认为，其对于联系的形式局限在反转卡片的形式上并不是很好。可以考虑多增加点形式以起到强化联系的作用。
 
+mw.web.eval("$('#qa')[0].append('hi there')")
+
+mw.web.eval("$('#qa')[0].innerText='hi there'")

@@ -1,4 +1,4 @@
-#!python
+#!/usr/bin/python3
 from pathlib import Path
 
 cwd = Path.cwd()

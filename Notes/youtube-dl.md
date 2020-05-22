@@ -1,11 +1,4 @@
 # youtube-dl
-youtube-dl --proxy "socks5://127.0.0.1:1080" https://cn.pornhub.com/playlist/98509861
-
-youtube-dl --proxy "socks5://127.0.0.1:1080" https://cn.pornhub.com/view_video.php?viewkey=ph5cf92df7d494f
-
-youtube-dl --proxy "socks5://127.0.0.1:1080" https://pornhub.com/playlist/121579051
-
-
 
 # proxy
 youtube-dl --proxy "socks5://127.0.0.1:1080"

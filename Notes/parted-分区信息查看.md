@@ -1,0 +1,1 @@
+sudo aprted -l /dev/sda1

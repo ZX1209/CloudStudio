@@ -1,3 +1,10 @@
+```py
+
+with open('data.json', 'w') as f:
+    json.dump(data, f)
+
+```
+
 import json
 
 # 将json字符串变为python类型

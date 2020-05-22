@@ -1,4 +1,4 @@
-#! python
+#!/usr/bin/python3
 import argparse
 # import sys
 from clara import ThirdShell
@@ -22,6 +22,7 @@ parser.add_argument("userPass")
 
 def init_repo(args=None):
     """main
+    init_repo {{userName}} {{ userPass }}
     """
     # args parser
     # default is sys.argv
