@@ -1,5 +1,7 @@
 # notify-send
 
+libnotify-bin
+
 > Uses the current desktop environment's notification system to create a notification.
 
 - Show a notification with the title "Test" and the content "This is a test":

@@ -1,3 +1,10 @@
+# not default run as a shell
+You need to supply shell=True to execute the command through a shell interpreter. If you do that however, you can no longer supply a list as the first argument, because the arguments will get quoted then. Instead, specify the raw commandline as you want it to be passed to the shell:
+
+ proc = subprocess.Popen('ls *.bc', shell=True,
+                                    stdout=subprocess.PIPE,
+                                    stderr=subprocess.PIPE)
+
 # shlex.split(cmd_str)
 
 subprocess.run("ls -l".split(),capture_output=True)

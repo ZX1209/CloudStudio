@@ -1,3 +1,32 @@
+# delete
+Deleting records
+To delete a single model instance, you can use the Model.delete_instance() shortcut. delete_instance() will delete the given model instance and can optionally delete any dependent objects recursively (by specifying recursive=True).
+
+>>> user = User.get(User.id == 1)
+>>> user.delete_instance()  # Returns the number of rows deleted.
+1
+
+>>> User.get(User.id == 1)
+UserDoesNotExist: instance matching query does not exist:
+SQL: SELECT t1."id", t1."username" FROM "user" AS t1 WHERE t1."id" = ?
+PARAMS: [1]
+To delete an arbitrary set of rows, you can issue a DELETE query. The following will delete all Tweet objects that are over one year old:
+
+>>> query = Tweet.delete().where(Tweet.creation_date < one_year_ago)
+>>> query.execute()  # Returns the number of rows deleted.
+7
+For more information, see the documentation on:
+
+Model.delete_instance()
+Model.delete()
+DeleteQuery
+
+# attention
+backref 调用后要用get来获取,,不不不,get只是获取一个,backref可以迭代?
+
+## namedtuple
+
+
 
 select
 where
@@ -64,6 +93,8 @@ bob.save()
 
 ## fn()
 Peewee provides a magical helper fn(), which can be used to call any SQL function. In the above example, fn.COUNT(Pet.id).alias('pet_count') would be translated into COUNT(pet.id) AS pet_count.
+
+fn.random?
 
 ## Working with existing databases
 If you already have a database, you can autogenerate peewee models using pwiz, a model generator. For instance, if I have a postgresql database named charles_blog, I might run:

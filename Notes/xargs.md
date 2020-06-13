@@ -1,3 +1,5 @@
+seq 10 15  | xargs touch
+
 # xargs
 
 > Execute a command with piped arguments coming from another command, a file, etc.

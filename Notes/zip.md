@@ -1,3 +1,7 @@
+# basic
+zip {{zip file name}} {{ file list}}
+
+
 # -h
 Copyright (c) 1990-2008 Info-ZIP - Type 'zip "-L"' for software license.
 Zip 3.0 (July 5th 2008). Usage:

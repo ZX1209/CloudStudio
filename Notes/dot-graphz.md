@@ -1,3 +1,20 @@
+# node 大小
+width
+heigh
+# 线段样式
+## 直拐线
+splines=ortho
+
+## 曲线
+splines=curved
+
+## 直线
+splines=line
+
+## 无
+splines=none
+splines=""
+
 # 最好 pip install graphviz
 
 # 无向图(graph) 有向图(digraph) 子图(subgraph)

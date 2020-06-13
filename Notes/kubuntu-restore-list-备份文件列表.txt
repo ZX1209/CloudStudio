@@ -1,0 +1,11 @@
+# include
+~/CloudStudio
+
+
+
+# exclude
+/home/gl/.config/google-chrome/
+/home/gl/.config/Code/
+/home/gl/.config/tencent-qq/
+/home/gl/.config/iease-music/
+/home/gl/.config/fsearch/

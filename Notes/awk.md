@@ -1,3 +1,9 @@
+# basic
+awk '{print $1, $4}' netstat.txt
+
+# with regex
+awk '/E/ {print $1 $2}' dot-paras-cut.txt
+
 # sum integers from a file or stdin, one integer per line:
 printf '1\n2\n3\n' | awk '{ sum += $1} END {print sum}'
 

@@ -6,8 +6,19 @@ find /folder --name "something"
 
 ## maxdepth
 
+## older than 30 days
+find /var/log -name "*.log" -type f -mtime +30 -exec rm -f {} \;
 
+-mmin n
+              File's data was last modified n minutes ago.
 
+Numeric arguments can be specified as
+
+       +n     for greater than n,
+
+       -n     for less than n,
+
+       n      for exactly n.
 
 
 # To find files by case-insensitive extension (ex: .jpg, .JPG, .jpG):

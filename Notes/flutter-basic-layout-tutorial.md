@@ -1,3 +1,14 @@
+# toc
+row and colum
+Flexible
+Expanded ： row,colum ,flex 中使用,占满剩余空间
+Spacer
+
+SizedBox
+
+Icon
+Image
+
 # Row and Column classes
 return Row(
       children: [
@@ -9,7 +20,7 @@ return Row(
 ? children : [] list 直接解析?
 
 
-# Axis size and alignment
+## Axis size and alignment
 
 ## mainAxisSize property (主轴尺寸)
 
@@ -96,7 +107,7 @@ SizedBox(
         ),
 ```
 
-# Spacer widget (相对大小打间隔创建.或改变大小?)
+# Spacer widget (相对大小间隔隔创建.或改变大小?)
 Similar to SizedBox, the Spacer widget also can create space between widgets.
 
 ```dart

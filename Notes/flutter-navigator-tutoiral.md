@@ -1,3 +1,11 @@
+## auto refush
+Navigator.push(context, MaterialPageRoute(builder: (context) => Page2())).then((value) {
+                  setState(() {
+                    // refresh state of Page1
+                  });
+                });
+
+
 ## push pop
 // 位于 FirstRoute widget (Within the `FirstRoute` widget)
 onPressed: () {

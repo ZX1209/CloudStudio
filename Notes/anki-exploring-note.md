@@ -287,6 +287,9 @@ anki/storage.py 206
 # 2020-04-01 
 ## 尝试对Decks 展示页面进行修改
 
+# 2020-05-29
+ankiweb可以助力anki的开发，，毕竟主页面都是html写的与anki web一致。
+
 
 # trash
 学习方面主要如下：
