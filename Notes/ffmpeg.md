@@ -92,7 +92,7 @@ http://www.ruanyifeng.com/blog/2020/01/ffmpeg.html
 
 `ffmpeg -i {{video_or_gif_filename}} {{image%d.png}}`
 
-- Combine numbered images (image1.jpg, image2.jpg, etc) into a video or GIF:
+- Combine numbered images (image1.jpg, image2.jpg, etc) into a video or GIF:ll
 
 `ffmpeg -f image2 -i {{image%d.jpg}} {{video.mpg_or_video.gif}}`
 

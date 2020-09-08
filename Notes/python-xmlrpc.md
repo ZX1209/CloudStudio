@@ -1,5 +1,9 @@
 ## cors solution
 ```py
+from xmlrpc.server import SimpleXMLRPCServer
+from xmlrpc.server import SimpleXMLRPCRequestHandler
+from rpc_api import PassiveRecallApi
+
 # Restrict to a particular path.
 class RequestHandler(SimpleXMLRPCRequestHandler):
     rpc_paths = ("/RPC2",)
@@ -16,18 +20,6 @@ class RequestHandler(SimpleXMLRPCRequestHandler):
         )
         self.send_header("Access-Control-Allow-Origin", "*")
         SimpleXMLRPCRequestHandler.end_headers(self)
-
-```
-
-
-```py
-from xmlrpc.server import SimpleXMLRPCServer
-from xmlrpc.server import SimpleXMLRPCRequestHandler
-
-# Restrict to a particular path.
-class RequestHandler(SimpleXMLRPCRequestHandler):
-    rpc_paths = ("/RPC2",)
-
 
 # Create server
 with SimpleXMLRPCServer(("localhost", 8000), requestHandler=RequestHandler) as server:
@@ -53,8 +45,9 @@ with SimpleXMLRPCServer(("localhost", 8000), requestHandler=RequestHandler) as s
 
     # Run the server's main loop
     server.serve_forever()
+```
 
- ```
+
 
 ```py
 import xmlrpc.client

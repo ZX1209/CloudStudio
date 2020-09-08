@@ -1,5 +1,8 @@
 # convert
 
+# channel R only
+convert image-003.jpg  -channel R -separate separate_red.jpg
+
 > Imagemagick image conversion tool.
 
 - Convert an image from JPG to PNG:

@@ -4,6 +4,12 @@ inspect live object
 
 .getsourcecode()
 
+# 获取类 中定义的函数
+inspect.getmembers(Name2PathApi, predicate=inspect.isfunction)
+
+# 获取 函数 参数 信息
+inspect.getfullargspec
+
 
 
 ```python

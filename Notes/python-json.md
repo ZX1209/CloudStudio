@@ -7,6 +7,9 @@ with open('data.json', 'w') as f:
 
 import json
 
+# json unicode 输出
+json.dump(data, f,ensure_ascii=False)
+
 # 将json字符串变为python类型
 json.loads()
 

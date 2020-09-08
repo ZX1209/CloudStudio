@@ -1,3 +1,16 @@
+# linux ,no require net
+```py
+cmdstr = 'ifconfig | grep -E "inet[^6]"'
+proc = subprocess.Popen(cmdstr, shell=True,
+                                    stdout=subprocess.PIPE,
+                                    stderr=subprocess.PIPE)
+
+results = proc.communicate()
+print(results[0])
+```
+
+
+
 # useful
 ```py
 import socket

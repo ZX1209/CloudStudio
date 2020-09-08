@@ -1,6 +1,11 @@
 # assignments ,variables
 {% set unkonwFileIconName = 'unknown.svg' %}
 
+# for loop
+{% for item in seq %}
+    <li>{{ item }}</li>
+{% endfor %}
+
 # Macros & Call
 ## Macros
 Macros are comparable with functions in regular programming languages. They are useful to put often used idioms into reusable functions to not repeat yourself (“DRY”).

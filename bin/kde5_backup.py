@@ -10,20 +10,24 @@ file_path = Path(__file__).absolute()
 file_dir_path = file_path.parent
 original_working_path = Path("./").absolute()
 
-
-# todo: need backup list
-need_backup_files = []
 file_dir = Path("/home/gl/.config")
+archive_dir = Path(
+    "/home/gl/Archive/Category-backup/kde5"
+)  # todo: should touch if this exists
+
+
+# done: need backup list
+need_backup_files = []
 
 # glob files
 need_backup_files.extend(file_dir.glob("k*"))
 need_backup_files.extend(file_dir.glob("plasma*"))
 
 # push working dir
-archive_dir = Path("/home/gl/Archive/Category-backup")
 pre_dir = Path.cwd()
 os.chdir(archive_dir)
 
+#
 archive_file_name = datetime.datetime.now().isoformat()[:19] + "--kde5_backup.zip"
 
 # todo: first calculate the size,use du
@@ -35,8 +39,6 @@ archive_file_name = datetime.datetime.now().isoformat()[:19] + "--kde5_backup.zi
 # ]
 # subprocess.run(calc_size_cmd)
 
-
-# todo: stop?
 
 backup_cmd = [
     "zip",

@@ -19,7 +19,7 @@ original_working_path = Path("./").absolute()
 vs_code_extensions_list_file = Path("")
 
 result = subprocess.run(["code", "--list-extensions"], capture_output=True)
-extensions_str = str(result, "utf-8")
+extensions_str = str(result.stdout, "utf-8")
 extension_list = extensions_str.split("\n")
 
 

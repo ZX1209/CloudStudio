@@ -845,7 +845,7 @@ We read the SQL file into the database.
 
 one2many.py
 
-```
+```py
 #!/usr/bin/env python3
 
 import peewee

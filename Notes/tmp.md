@@ -1,3 +1,5 @@
+/home/gl/Projects/anki-exploring/flutter_passive_recall_ui/build/linux/release/bundle/flutter_passive_recall_ui
+
 
 TODO: 这里可能很有用处了
 

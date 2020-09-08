@@ -1,3 +1,21 @@
+# check exists
+
+If you just need to check existence use the accepted answer.
+
+If you are going to use the record if it exists you can make use of Model.get_or_none() as this removes the need to use a try/catch and will not create a record if the record doesn't exist.
+
+class User(peewee.Model):
+    username = peewee.CharField(unique=True)
+
+user = User.get_or_none(username='charlie')
+if user is not None:
+    # found user, do something with it
+    pass
+---
+Name.select().where(Name.name == '减肥十件事1').exists()
+or count()
+
+
 # delete
 Deleting records
 To delete a single model instance, you can use the Model.delete_instance() shortcut. delete_instance() will delete the given model instance and can optionally delete any dependent objects recursively (by specifying recursive=True).

@@ -1,5 +1,9 @@
 # nmap
 
+# scan and report device
+nmap -sn 192.168.137.146/24
+
+
 > Network exploration tool and security / port scanner.
 > Some features only activate when Nmap is run with privileges.
 

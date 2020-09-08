@@ -1,4 +1,5 @@
 # free
+free -m -h
 
 > Display amount of free and used memory in the system.
 
