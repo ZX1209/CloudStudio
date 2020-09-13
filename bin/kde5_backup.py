@@ -10,9 +10,10 @@ file_path = Path(__file__).absolute()
 file_dir_path = file_path.parent
 original_working_path = Path("./").absolute()
 
+# const
 file_dir = Path("/home/gl/.config")
 archive_dir = Path(
-    "/home/gl/Archive/Category-backup/kde5"
+    "/home/gl/gl_home/archive/category-backup/kde5"
 )  # todo: should touch if this exists
 
 
@@ -28,7 +29,7 @@ pre_dir = Path.cwd()
 os.chdir(archive_dir)
 
 #
-archive_file_name = datetime.datetime.now().isoformat()[:19] + "--kde5_backup.zip"
+archive_file_name = datetime.datetime.now().isoformat()[:10] + "--kde5_backup.zip"
 
 # todo: first calculate the size,use du
 

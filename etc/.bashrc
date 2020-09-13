@@ -245,7 +245,7 @@ export ALL_PROXY=http://127.0.0.1:8118/
 # cli proxy end
 
 # flutter start
-export FLUTTER_PATH=/home/gl/Archive/Category-AppData/Linux/Flutter/flutter/bin/
+export FLUTTER_PATH=/home/gl/gl_home/archive/category-AppData/Linux/Flutter/flutter/bin/
 export PATH=$PATH:$FLUTTER_PATH
 
 export PUB_HOSTED_URL=https://pub.flutter-io.cn
@@ -267,7 +267,7 @@ export EDITOR=/home/gl/CloudStudio/bin/sublime-wait.sh
 # crontab end
 
 # andriod start
-export ANDROID_HOME=/home/gl/Archive/Category-AppData/Linux/android-sdk/
+export ANDROID_HOME=/home/gl/gl_home/archive/category-AppData/Linux/android-sdk/
 export PATH=$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$PATH
 # andriod end
 
