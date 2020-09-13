@@ -1,6 +1,8 @@
 digraph abc{
-  node[shape="record"]
-  edge[style=dashed]
+  
+rankdir="LR"
+  node[shape="record" ]
+  edge[style=dashed ]
   
   label = "this is a label"
   a[shape="record"];
@@ -11,4 +13,6 @@ digraph abc{
   a -> b;
   b -> d;
   c -> e;
+
+  e -> {aaa,bbb,ccc,ddd,eee}
 }

@@ -7,6 +7,20 @@ key: value
 数组也可以采用行内表示法。
 animal: [Cat, Dog]
 
+# 复合结构
+对象和数组可以结合使用，形成复合结构。
+
+
+languages:
+ - Ruby
+ - Perl
+ - Python 
+websites:
+ YAML: yaml.org 
+ Ruby: ruby-lang.org 
+ Python: python.org 
+ Perl: use.perl.org 
+
 # 纯量
 ?
 

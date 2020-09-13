@@ -1,40 +1,21 @@
 ## 基本顺序
 
-rsync -av /from /to
+rsync -avzp /from /to
 
 ## somthing/ and something
 
 
-
-## --delete
-
-
-
 ## -P
-
 show process
 
-
-
 ## -a
-
 all
 
-
-
 ## -v
-
 visual
 
-
-
 ## -z
-
 zip??
-
-
-
-
 
 ## To copy files from remote to local, maintaining file properties and sym-links (-a), zipping for faster transfer (-z), verbose (-v).
 
