@@ -8,11 +8,10 @@ import logging as log
 
 log.basicConfig(level=log.DEBUG)
 
-# file_path = Path(__file__).absolute()
-# file_dir_path = file_path.parent
-# original_working_path = Path("./").absolute()
-# os.chdir(file_dir_path)
+"""
+convert_images.py {{/path/to/file}}
 
+"""
 
 if __name__ == "__main__":
     # input
@@ -34,14 +33,14 @@ if __name__ == "__main__":
         if not imagesDir.exists():
             imagesDir.mkdir()
 
-        imageroot = str(imagesDir) + "/image"
+        imageroot = str(imagesDir) + "/image-"
 
         log.debug(["pdfimages", "-j", filePath, imageroot])
 
         proc = subprocess.run(["pdfimages", "-j", filePath, imageroot])
 
     # split channel R
-    for img in imagesDir.glob("image*"):
+    for img in imagesDir.glob("image-*"):
         log.debug(img)
         log.debug(
             [
@@ -65,14 +64,15 @@ if __name__ == "__main__":
         )
 
     # join (he cheng)
-    separate_imgs = imagesDir.glob("separate*")
+    # use subprocess.run shell=True
+    # separate_imgs = imagesDir.glob("separate*")
 
     if not out_file_dir.exists():
         out_file_dir.mkdir()
 
+    log.debug(" ".join(["img2pdf", str(imagesDir)+"/separate*", "-o", str(out_file_dir / out_file_name),]))
     proc = subprocess.run(
-        ["img2pdf", *separate_imgs, "-o", out_file_dir / out_file_name,]
+        " ".join(["img2pdf", str(imagesDir)+"/separate*", "-o", str(out_file_dir / out_file_name),]),shell=True,stdout=subprocess.PIPE,
+                                    stderr=subprocess.PIPE
     )
-
-    # convert image-003.jpg  -channel R -separate separate_red.jpg
 
