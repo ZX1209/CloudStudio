@@ -1,4 +1,7 @@
 # youtube-dl
+youtube-dl --proxy "socks5://127.0.0.1:1080" -f 'bestvideo[height<=720]' 
+# 指定最好视频格式
+youtube-dl -f 'bestvideo[height<=720]'
 
 # proxy
 youtube-dl --proxy "socks5://127.0.0.1:1080"

@@ -11,10 +11,15 @@
 CTRL+W              # 删除光标左边的一个单词
 
 CTRL+A              # 移动到行首，同 <Home>
+CTRL+E              # 移动到行末，同 <End>
+
+CTRL+X              # 列出可能的补全
+CTRL+Z              # 暂停前台进程返回 bash，需要时可用 fg 将其切换回前台
+
+
 CTRL+B              # 向后移动，同 <Left>
 CTRL+C              # 结束当前命令
 CTRL+D              # 删除光标前的字符，同 <Delete> ，或者没有内容时，退出会话
-CTRL+E              # 移动到行末，同 <End>
 CTRL+F              # 向前移动，同 <Right>
 CTRL+G              # 退出当前编辑（比如正在 CTRL+R 搜索历史时）
 CTRL+H              # 删除光标左边的字符，同 <Backspace>
@@ -29,9 +34,7 @@ CTRL+T              # 交换前后两个字符
 CTRL+U              # 删除字符到行首
 CTRL+V              # 输入字符字面量，先按 CTRL+V 再按任意键
 
-CTRL+X              # 列出可能的补全
 CTRL+Y              # 粘贴前面 CTRL+u/k/w 删除过的内容
-CTRL+Z              # 暂停前台进程返回 bash，需要时可用 fg 将其切换回前台
 CTRL+_              # 撤销（undo），有的终端将 CTRL+_ 映射为 CTRL+/ 或 CTRL+7
 
 ALT+b               # 向后（左边）移动一个单词

@@ -13,6 +13,7 @@ pdfimages -j sourcefile  imageroot(with file suffix)
 但还是挺少的呢.
 convert image-003.jpg  -channel R -separate separate_red.jpg
 
+> convert_images.py
 
 ## 文字分离
 简单,方法多

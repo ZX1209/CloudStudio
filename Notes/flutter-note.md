@@ -1,3 +1,6 @@
+先tm 构建ui吗?
+
+
 A widget’s main job is to implement a build() function, which describes the widget in terms of other, lower-level widgets.
 
 The framework builds those widgets in turn until the process bottoms out in widgets that represent the underlying RenderObject, which computes and describes the geometry of the widget.

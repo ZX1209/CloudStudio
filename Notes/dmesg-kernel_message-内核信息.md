@@ -2,6 +2,10 @@
 
 > Write the kernel messages to standard output.
 
+# demsg -T
+# dmesg --ctime
+Since about July 2011 one can use dmesg -T or dmesg --ctime to get human-readable timestamps.
+
 - Show kernel messages:
 
 `dmesg`

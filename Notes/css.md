@@ -1,7 +1,10 @@
+# 媒体查询 
+
 # display 属性
 block: 占整行
 inline: 可在文字内
 none: 隐藏,不占位置
+inline-table: 每个元素同样的宽高
 
 # max-width
 
@@ -26,11 +29,6 @@ overline : 　上划线
 float:left
 > 或者是什么grid的,,不怎么用呢...
 嗯,,clear: left;谨慎
-
-# display 样式
-inline
-block
-inline-block
 
 # 字体
 font-size:10px;

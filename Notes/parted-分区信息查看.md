@@ -1,1 +1,3 @@
-sudo aprted -l /dev/sda1
+sudo parted -l
+
+sudo parted -l /dev/sda1

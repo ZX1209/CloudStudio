@@ -1,3 +1,6 @@
+# display
+display : inline-table
+
 # head metadata
 
 # 上传下载文件
@@ -72,6 +75,7 @@ meau
 # 封装
 div
 span 
+
 display:inline,block,inline-block
 
 

@@ -2,6 +2,9 @@
 
 rsync -avzp /from /to
 
+## dir only
+rsync -a --include='*/' --exclude='*' source/ destination/
+
 ## somthing/ and something
 
 
