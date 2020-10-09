@@ -2,7 +2,7 @@
 dot -Tpdf filename.dot -o filename.pdf
 
 # 基本
-```dot
+```graphviz
 graph G{} //无向图
 digraph G{} // 有向图
 

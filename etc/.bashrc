@@ -283,6 +283,10 @@ export PATH=$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$PATH
 # export GRADLE_OPTS='-DsocksProxyHost=127.0.0.1 -DsocksProxyPort=1080'
 # gradle end
 
+# npm start
+export PATH=~/.npm-global/bin:$PATH
+# npm end
+
 # alias start
 alias python=python3
 alias ipython=ipython3
