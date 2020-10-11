@@ -1,3 +1,17 @@
+# 构造
+## arange+reshape
+
+## linspace+resize
+
+## 常用
+- np.ones((3, 2))
+- np.zeros((2, 3))
+- np.eye(3)#3维单位矩阵
+- y = np.array([4, 5, 6])
+- np.diag(y)#以y为主对角线创建矩阵
+- np.random.randint(0, 10, (4,3))
+
+
 # 乘阶
 numpy.math.factorial(3)
 
