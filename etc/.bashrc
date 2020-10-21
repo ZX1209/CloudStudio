@@ -199,9 +199,9 @@ PS1+="\[${green}\]\h \[${reset}\]"
 PS1+="in "
 PS1+="\[${white}\][\A Week:\d]\[${reset}\]"
 PS1+="\n"
-PS1+="\[${blue}\]\w \[${reset}\]"
+PS1+="\[${yellow}\]\w \[${reset}\]"
 PS1+="\n"
-PS1+="\[${orange}\]\$\[${reset}\]"
+PS1+="\[${red}\]\$\[${reset}\]"
 
 export PS1
 
