@@ -1,3 +1,22 @@
+# copy to clipboard
+```py
+from datetime import datetime
+import subprocess
+import matplotlib.pyplot as plt
+# import numpy as np 
+
+
+# ...
+
+def fig_save_clipboard():
+    save_path  = "/tmp/" + datetime.now().isoformat() + ".png"
+    plt.savefig(save_path)
+
+    subprocess.run(["xclip","-selection","clipboard","-t","image/png","-i",save_path])
+
+
+```
+
 # 坐标轴及网格线
 ```py
 ax.axhline(0, color='red', lw=2)

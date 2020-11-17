@@ -1,3 +1,6 @@
+只显示已有信息
+
+
 # host
 
 > Lookup Domain Name Server.

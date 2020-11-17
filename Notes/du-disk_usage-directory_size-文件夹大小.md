@@ -1,4 +1,5 @@
-#
+
+
 # To sort directories/files by size
 du -sk *| sort -rn
 

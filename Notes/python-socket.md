@@ -1,3 +1,81 @@
+## tcp client server template
+> 一个 socket.socket 对象 来进行连接,发送  绑定,监听..
+
+```python
+#server.py
+
+import socket
+
+HOST = '127.0.0.1'  # Standard loopback interface address (localhost)
+PORT = 65432        # Port to listen on (non-privileged ports are > 1023)
+
+with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+    s.bind((HOST, PORT))
+    s.listen()
+    conn, addr = s.accept()
+    with conn:
+        print('Connected by', addr)
+        while True:
+            data = conn.recv(1024)
+            if not data:
+                break
+            conn.sendall(data)
+```
+
+```python
+# client.py
+import socket
+
+HOST = '127.0.0.1'  # The server's hostname or IP address
+PORT = 65432        # The port used by the server
+
+with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+    s.connect((HOST, PORT))
+    s.sendall(b'Hello, world')
+    data = s.recv(1024)
+
+print('Received', repr(data))
+```
+
+## udp广播,udp braodcast
+
+```python
+# client
+# Create a UDP socket
+sock = socket(AF_INET, SOCK_DGRAM)
+sock.setsockopt(SOL_SOCKET, SO_REUSEADDR, 1)
+sock.setsockopt(SOL_SOCKET, SO_BROADCAST, 1)
+sock.settimeout(5)
+
+server_address = ('255.255.255.255', 9434)
+
+sock.sendto(data,address)
+```
+
+```python
+# server
+sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+
+server_address = ('', 9434)
+
+sock.bind(server_address)
+
+while True:
+	data, address = sock.recvfrom(4096) # only recvfrom 
+	data = str(data.decode('UTF-8'))
+
+	if data == 'pfg_ip_broadcast_cl':
+		#print('responding...')
+		sent = sock.sendto(b"data", address)
+		#print('Sent confirmation back')
+```
+
+
+## end
+
+
+
+
 ```py
 
 def BytestoBin(bs):
@@ -99,43 +177,6 @@ for port in range(26737,50000):
 
 ```
 
-# 一个 socket.socket 对象 来进行连接,发送  绑定,监听..
-
-```python
-#server.py
-
-import socket
-
-HOST = '127.0.0.1'  # Standard loopback interface address (localhost)
-PORT = 65432        # Port to listen on (non-privileged ports are > 1023)
-
-with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
-    s.bind((HOST, PORT))
-    s.listen()
-    conn, addr = s.accept()
-    with conn:
-        print('Connected by', addr)
-        while True:
-            data = conn.recv(1024)
-            if not data:
-                break
-            conn.sendall(data)
-```
-
-```python
-# client.py
-import socket
-
-HOST = '127.0.0.1'  # The server's hostname or IP address
-PORT = 65432        # The port used by the server
-
-with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
-    s.connect((HOST, PORT))
-    s.sendall(b'Hello, world')
-    data = s.recv(1024)
-
-print('Received', repr(data))
-```
 
 
 # byte code

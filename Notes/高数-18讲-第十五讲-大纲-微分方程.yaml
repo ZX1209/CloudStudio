@@ -11,7 +11,7 @@
     ]
     齐次型: [
         y' = f(y/x) => 令y/x=u => 换元后分离变量即y=ux => dy/dx = u+xdu/dx => 原方程为 x du/dx => f(u) => du/(f(u)-u) = dx/x => ∫{du/(f(u)-u)} = ∫{dx/x},
-        1/y' = f(x/y) => 令x/y=u => 换元后分离变量即 x=uy => dx/dy=u+y du/dy => 原方程为 y du/dy+u=f(u) => du/(f(u)-u)=dy/y => ∫{du/(f(u)-u)}=∫{dy/y},
+        1/y' = f(x/y) => 令x/y=u => 换元后分离变量即 x=uy => dx/dy=u + ydu/dy => 原方程为   ydu/dy+u=f(u) => du/(f(u)-u)=dy/y => ∫{du/(f(u)-u)}=∫{dy/y},
     ]
     一阶线性型: [
         "y'+p(x)y=q(x) => 方程两边同时乘以e^ {∫{p(x)dx}} => [e^ {∫{p(x)dx}} y ]' = e^ {∫{p(x)dx}}q(x) => 积分求值;x与y可以互换" ,

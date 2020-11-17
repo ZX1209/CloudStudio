@@ -1,0 +1,1 @@
+$${\displaystyle {\rm {J=N\cdot m=\left({\frac {kg\cdot m}{s^{2}}}\right)\cdot m={\frac {kg\cdot m^{2}}{s^{2}}}=Pa\cdot m^{3}=W\cdot s\ =C\cdot V\,\!}}}。$$

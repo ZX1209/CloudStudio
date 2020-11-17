@@ -1,6 +1,33 @@
 #start cron 
 service cron start
 
+> https://help.ubuntu.com/community/CronHowto#GUI_Applications
+
+# GUI Applications
+00 06 * * * env DISPLAY=:0 gui_appname
+
+
+It is possible to run gui applications via cronjobs. This can be done by telling cron which display to use.
+
+00 06 * * * env DISPLAY=:0 gui_appname
+The env DISPLAY=:0 portion will tell cron to use the current display (desktop) for the program "gui_appname".
+
+And if you have multiple monitors, don't forget to specify on which one the program is to be run. For example, to run it on the first screen (default screen) use :
+
+00 06 * * * env DISPLAY=:0.0 gui_appname
+The env DISPLAY=:0.0 portion will tell cron to use the first screen of the current display for the program "gui_appname".
+
+Note: GUI users may prefer to use gnome-schedule (aka "Scheduled tasks") to configure GUI cron jobs. In gnome-schedule, when editing a GUI task, you have to select "X application" in a dropdown next to the command field.
+
+Note: In Karmic(9.10), you have to enable X ACL for localhost to connect to for GUI applications to work.
+
+ ~$ xhost +local:
+non-network local connections being added to access control list
+ ~$ xhost
+access control enabled, only authorized clients can connect
+LOCAL:
+...
+
 # 输出到终端
 /dev/tty
 

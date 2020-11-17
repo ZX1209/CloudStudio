@@ -1,3 +1,9 @@
+## 组合文件
+`cat {{file1}} {{file2}} > {{target_file}}`
+
+
+
+
 # cat
 
 > Print and concatenate files.

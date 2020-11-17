@@ -1,3 +1,5 @@
+## 超过视区自动换行(word wrap)
+
 Name: One Dark Flatland Monokai
 Id: reblws.one-dark-flatland-monokai
 Description: Flatland Monokai syntax colors with a One Dark editor shell

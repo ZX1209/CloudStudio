@@ -251,17 +251,25 @@ export PATH=$PATH:$FLUTTER_PATH
 export PUB_HOSTED_URL=https://pub.flutter-io.cn
 export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
 
-
-# export ENABLE_FLUTTER_DESKTOP=true
+export PATH="$PATH":"$HOME/gl_home/archive/category-AppData/Linux/Flutter/flutter/.pub-cache/bin"
+export ENABLE_FLUTTER_DESKTOP=true
 
 # flutter config --enable-web
 
 # flutter end
 
 # crontab start
-export VISUAL=/home/gl/CloudStudio/bin/sublime-wait.sh
-export EDITOR=/home/gl/CloudStudio/bin/sublime-wait.sh
+## sublime
+# export VISUAL=/home/gl/CloudStudio/bin/sublime-wait.sh
+# export EDITOR=/home/gl/CloudStudio/bin/sublime-wait.sh
 
+## vim
+# export VISUAL=/usr/bin/vim
+# export EDITOR=/usr/bin/vim
+
+## vscode
+export VISUAL=/home/gl/CloudStudio/bin/code-wait.sh
+export EDITOR=/home/gl/CloudStudio/bin/code-wait.sh
 # EDITOR
 
 # crontab end

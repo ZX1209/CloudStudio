@@ -25,7 +25,7 @@
     </Filter>
     <FolderPairs>
         <Pair>
-            <Left>/home/gl/Archive</Left>
+            <Left>/home/gl/gl_home/archive</Left>
             <Right>/media/gl/移动硬盘-高领/gl/archive</Right>
         </Pair>
     </FolderPairs>

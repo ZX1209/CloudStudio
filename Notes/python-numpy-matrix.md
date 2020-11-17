@@ -13,6 +13,15 @@
 | 共轭转置 | ---                | C.H        |
 | 求迹     | np.trace(A)        | ---        |
 
+## 精确度
+```py
+# 输出精确度
+np.set_printoptions(precision=3)
+
+# 抑制科学计数法
+np.set_printoptions(suppress=True)
+```
+
 
 # mat utility
 ```py
@@ -30,3 +39,6 @@ np.mat()
 # 乘积
 @
 (python3.7)
+
+## 对角化
+Mat.diagonalize()

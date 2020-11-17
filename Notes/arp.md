@@ -1,3 +1,8 @@
+ip neighbour
+
+cat /proc/net/arp
+
+
 # arp
 
 > Show and manipulate your system's ARP cache.

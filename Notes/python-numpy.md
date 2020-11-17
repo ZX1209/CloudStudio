@@ -3,6 +3,15 @@
 
 ## linspace+resize
 
+## 精确度
+```py
+# 输出精确度
+np.set_printoptions(precision=3)
+
+# 抑制科学计数法
+np.set_printoptions(suppress=True)
+```
+
 ## 常用
 - np.ones((3, 2))
 - np.zeros((2, 3))
