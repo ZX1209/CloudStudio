@@ -1,5 +1,11 @@
-# math.atan2
-math.atan2(1,0)
+## 复制 符号
+math.copysign(source_num,sign_num)->source_num(abs)_with_sign
+
+# math.atan2 向量绝对弧度值
+math.atan2(y,x)
+
+# 向量绝对度数
+math.degrees(math.atan2(y,x))
 
 # math.sin()
 math.sin(math.pi)
@@ -22,6 +28,8 @@ math.log()
 math.ceil()
 
 math.floor()
+
+math.copysign(math.ceil(abs(the_num)),the_num)
 
 
 # 乘阶

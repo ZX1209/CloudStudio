@@ -1,3 +1,6 @@
+## 线性?插值
+numpy.interp
+
 # 构造
 ## arange+reshape
 
