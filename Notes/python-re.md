@@ -1,3 +1,8 @@
+math 
+search
+findall
+
+
 # re.match(pattern, string, flags=0)
 Try to apply the pattern at the start of the string, returning
 a Match object, or None if no match was found.
