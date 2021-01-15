@@ -301,6 +301,9 @@ alias ipython=ipython3
 alias py=python3
 alias ipy=ipython3
 
+alias ct='python /home/gl/gl_home/projects/play_ground/template-python/try/docopt_cli_parser.py'
+alias copytemplate='python /home/gl/gl_home/projects/play_ground/template-python/try/docopt_cli_parser.py'
+
 # alias end
 
 # func start
@@ -315,3 +318,5 @@ function autorestart(){
 }
 
 # func end
+
+xset r rate 200 20  

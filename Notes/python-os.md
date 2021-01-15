@@ -1,5 +1,5 @@
-# about path see pathlib.Path
-# basic
+## about path see pathlib.Path
+### basic
 ```py
 from pathlib import Path
 p = Path('./c')
@@ -12,7 +12,8 @@ p.glob(*.py)
 ...
 ```
 
-
+## environ
+os.environ
 
 # os.path.exists() ; os.mkdir()
 ```python

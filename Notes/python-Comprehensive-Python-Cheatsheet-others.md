@@ -30,6 +30,7 @@ List
 ----
 ```python
 <list> = <list>[from_inclusive : to_exclusive : ±step_size]
+
 ```
 
 ```python
