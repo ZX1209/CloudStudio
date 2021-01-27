@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import tkinter as tk
 import time
 
@@ -24,7 +25,7 @@ class TimeCounter(tk.Frame):
         # )
         # self.trigle_time_val = tk.StringVar(value=datetime.today().strftime("%H:%M:%S"))
         self.trigle_datetime_val = tk.StringVar(
-            value=time.strftime("trigled in  %H:%M 周%w %Y-%m-%d ", time.gmtime())
+            value=time.strftime("trigled in  %H:%M 周%w %Y-%m-%d ", time.localtime())
         )
         self.counted_time_val = tk.StringVar()
 
