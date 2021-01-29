@@ -1,3 +1,51 @@
+> https://docs.python.org/zh-cn/3/library/tk.html
+
+todo: 变量set,get 与 root.after
+## variables
+> https://docs.python.org/zh-cn/3/library/tkinter.html#coupling-widget-variables
+
+```py
+# Create the application variable.
+self.contents = tk.StringVar()
+# Set it to some value.
+self.contents.set("this is a variable")
+# Tell the entry widget to watch this variable.
+self.entrythingy["textvariable"] = self.contents
+# or
+l2 = tk.Label(root, textvariable=trigle_date, font=("Arial", 20))
+```
+## after
+root.after(1000, count_time)
+## sample
+
+class
+```py 
+import tkinter as tk
+
+class Application(tk.Frame):
+    def __init__(self, master=None):
+        super().__init__(master)
+        self.master = master
+        self.pack()
+        self.create_widgets()
+
+    def create_widgets(self):
+        self.hi_there = tk.Button(self)
+        self.hi_there["text"] = "Hello World\n(click me)"
+        self.hi_there["command"] = self.say_hi
+        self.hi_there.pack(side="top")
+
+        self.quit = tk.Button(self, text="QUIT", fg="red",
+                              command=self.master.destroy)
+        self.quit.pack(side="bottom")
+
+    def say_hi(self):
+        print("hi there, everyone!")
+
+root = tk.Tk()
+app = Application(master=root)
+app.mainloop()
+```
 # pack 
 首先我们先看看我们常用的pack(), 他会按照上下左右的方式排列.
 
