@@ -1,4 +1,30 @@
 > http://zetcode.com/python/peewee/
+## foreign assign
+When a model has a foreign key, you can directly assign a model instance to the foreign key field when creating a new record.
+
+>>> tweet = Tweet.create(user=huey, message='Hello!')
+You can also use the value of the related object’s primary key:
+
+>>> tweet = Tweet.create(user=2, message='Hello again!')
+
+
+Query operators
+The following types of comparisons are supported by peewee:
+
+## Comparison	Meaning
+==	x equals y
+<	x is less than y
+<=	x is less than or equal to y
+>	x is greater than y
+>=	x is greater than or equal to y
+!=	x is not equal to y
+<<	x IN y, where y is a list or query
+>>	x IS y, where y is None/NULL
+%	x LIKE y where y may contain wildcards(title % '*'+k+'*')
+**	x ILIKE y where y may contain wildcards
+^	x XOR y
+~	Unary negation (e.g., NOT x)
+
 
 # Peewee mapping
 A Model maps to the database table,
@@ -12,21 +38,21 @@ In this tutorial, we work with SQLite database.
 
 # Peewee field types
 Field types in a Peewee model define the storage type of the model. They are translated to the corresponding database column types.
-Field  Type |	SQLite |	PostgreSQL |	MySQL
-|---|---|---|---|
-CharField |	varchar |	varchar |	varchar
-TextField |	text |	text |	longtext
-DateTimeField |	datetime |	timestamp |	datetime
-IntegerField |	integer |	integer |	integer
-BooleanField |	smallint |	boolean |	bool
-FloatField |	real |	real |	real
-DoubleField |	real |	double | precision	double precision
-BigIntegerField |	integer |	bigint |	bigint
-DecimalField |	decimal |	numeric |	numeric
-PrimaryKeyField |	integer |	serial |	integer
-ForeignKeyField |	integer |	integer |	integer
-DateField |	date |	date |	date
-TimeField |	time |	time |	time
+| Field  Type     | SQLite   | PostgreSQL | MySQL                      |
+| --------------- | -------- | ---------- | -------------------------- |
+| CharField       | varchar  | varchar    | varchar                    |
+| TextField       | text     | text       | longtext                   |
+| DateTimeField   | datetime | timestamp  | datetime                   |
+| IntegerField    | integer  | integer    | integer                    |
+| BooleanField    | smallint | boolean    | bool                       |
+| FloatField      | real     | real       | real                       |
+| DoubleField     | real     | double     | precision	double precision |
+| BigIntegerField | integer  | bigint     | bigint                     |
+| DecimalField    | decimal  | numeric    | numeric                    |
+| PrimaryKeyField | integer  | serial     | integer                    |
+| ForeignKeyField | integer  | integer    | integer                    |
+| DateField       | date     | date       | date                       |
+| TimeField       | time     | time       | time                       |
 This table lists the Peewee field types and the corresponding SQLite, PostgreSQL and MySQL column types.
 
 ## Peewee model definition

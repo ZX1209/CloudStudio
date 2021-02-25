@@ -39,3 +39,24 @@ Here are some reminders for new users:
 • Don’t type anything you don’t understand
 • Don’t change the file permissions (before the full security review)
 • Don’t leave your root shell until you TEST your changes
+
+## 装机
+###   AMD CPU
+| 分    | 核心  | 主频 | 价格(盒) |
+| ----- | ----- | ---- | -------- |
+| 3600X | 6C12T | 3.8G | 1749     |
+| 3600  | 6C12T | 3.6G | 1499     |
+| 3500X | 6C6T  | 3.6G | 1099     |
+| 3300X | 4C8T  | 3.8G | 959      |
+| 3700X | 8C16T | 3.6G | 2499     |
+
+
+###   主板
+| 分           | 拓展  | 主频 | 价格 |
+| ------------ | ----- | ---- | ---- |
+| 迫击炮MAX    | 6C12T | 3.8G | 629  |
+| tuf pro      | 6C12T | 3.6G | 739  |
+| 华硕 B450f   | 6C6T  | 3.6G | 1099 |
+| 重炮手 pro s | 6C6T  | 3.6G | 500  |
+
+1651

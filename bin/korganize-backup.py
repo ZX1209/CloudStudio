@@ -28,7 +28,7 @@ pre_dir = Path.cwd()
 os.chdir(archive_dir)
 
 #
-archive_file_name = datetime.datetime.now().isoformat()[:10] + "--calendars-backup.zip"
+archive_file_name = datetime.datetime.now().isoformat()[:16] + "--calendars-backup.zip"
 
 # todo: first calculate the size,use du
 
