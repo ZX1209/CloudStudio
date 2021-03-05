@@ -314,7 +314,7 @@ function applist(){
 }
 
 function autorestart(){
-    sudo rtcwake -m freeze -l -t $(date +%s -d "tomorrow 07:30")
+    sudo rtcwake -m freeze -l -t $(date +%s -d "tomorrow 06:58")
 }
 
 # func end
