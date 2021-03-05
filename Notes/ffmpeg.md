@@ -5,10 +5,16 @@
 -c:v：指定视频编码器
 -c:a：指定音频编码器
 -i：指定输入文件
--an：去除音频流
--vn： 去除视频流
+-an：audio no,去除音频流
+-vn： video no,去除视频流
 -preset：指定输出的视频质量，会影响文件的生成速度，有以下几个可用的值 ultrafast, superfast, veryfast, faster, fast, medium, slow, slower, veryslow。
 -y：不经过确认，输出时直接覆盖同名文件。
+-t: duration (input/output)
+           When used as an input option (before "-i"), limit the duration of data read from the input file.
+-ss: position (input/output)
+           When used as an input option (before "-i"), seeks in this input file to position. Note that in most formats it is not possible to
+           seek exactly,
+
 
 
 # FFmpeg 的命令行参数非常多，可以分成五个部分。
@@ -33,6 +39,30 @@ $ ffmpeg \
 [输出文件]
 
 下面是一个例子。
+## 剪切视频
+ffmpeg -i input.mp4 -ss 01:19:27 -to 02:18:51 -c:v copy -c:a copy output.mp4
+
+ffmpeg -i input.mp4 -ss 00:01:10 -t 00:01:05 -c:v copy -c:a copy output.mp4
+
+
+fmpeg -ss 00:10:00  -i {input file path}  -vcodec copy -acodec copy {output
+ file path} 
+fmpeg -ss 00:10:00  -i {input file path}  -vcodec copy -acodec copy {output
+ file path} 
+## 合并视
+> https://stackoverflow.com/questions/7333232/how-to-concatenate-two-mp4-files-using-ffmpeg频
+### concat
+ffmpeg -i "concat:input1|input2" -codec copy output.mkv
+
+### for mp4
+:: Create File List
+echo file file1.mp4 >  mylist.txt 
+echo file file2.mp4 >> mylist.txt
+echo file file3.mp4 >> mylist.txt
+
+:: Concatenate Files
+ffmpeg -f concat -i mylist.txt -c copy output.mp4
+
 
 ## 快速截图 
 > -ss 放在最前面
