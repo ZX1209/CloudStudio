@@ -137,3 +137,27 @@ https://code.visualstudio.com/docs/editor/tasks-appendix
 ps 触发参数提醒
 # launch.json schema 全参数 模板
 by invoking IntelliSense inside the launch.json string attributes.
+
+## 插件
+region folding for vscode 
+
+```json
+"maptz.regionfolder": {
+        //     "[ahk]": {                                      //Language selector
+        //         "foldEnd": "; #endregion",                    //Text inserted at the end of the fold
+        //         "foldEndRegex": ";[\\s]*#endregion",          //Regex used to find fold end text.
+        //         "foldStart": "; #region [NAME]",              //Text inserted at the start of the fold.
+        //                                                     //Use the `[NAME]` placeholder to indicate
+        //                                                     //where the cursor should be placed after
+        //                                                     //insertion
+        //         "foldStartRegex": ";[\\s]*#region[\\s]*(.*)"  ////Regex used to find fold start text.
+        //         "disableFolding": false //Turn off #region folding for this language
+        // }
+        "[python]": { //Language selector
+            "foldStart": "; #start_region [NAME]", //Text inserted at the start of the fold.
+            "foldEnd": "; #end_region [NAME]", //Text inserted at the end of the fold
+            "foldEndRegex": ";[\\s]*#end_region", //Regex used to find fold end text.
+            "foldStartRegex": ";[\\s]*#start_region[\\s]*(.*)" ////Regex used to find fold start text.
+        }
+    }
+```
