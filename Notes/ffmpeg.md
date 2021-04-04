@@ -39,6 +39,10 @@ $ ffmpeg \
 [输出文件]
 
 下面是一个例子。
+
+## 分辨率缩放
+
+
 ## 剪切视频
 ffmpeg -i input.mp4 -ss 01:19:27 -to 02:18:51 -c:v copy -c:a copy output.mp4
 

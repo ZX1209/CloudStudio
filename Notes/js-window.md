@@ -13,14 +13,16 @@ frames[]
 
 该集合是 Window 对象的数组，每个 Window 对象在窗口中含有一个框架或 <iframe>。属性 frames.length 存放数组 frames[] 中含有的元素个数。注意，frames[] 数组中引用的框架可能还包括框架，它们自己也具有 frames[] 数组。
 
-# Window 对象属性
+## 钩子函数
+
+## Window 对象属性
 属性  描述
 closed  返回窗口是否已被关闭。
 defaultStatus   设置或返回窗口状态栏中的默认文本。
 document    对 Document 对象的只读引用。请参阅 Document 对象。
 history 对 History 对象的只读引用。请参数 History 对象。
 innerheight 返回窗口的文档显示区的高度。
-innerwidth  返回窗口的文档显示区的宽度。
+innerwidth  返回窗口的文档显示区的宽度。 :star:
 length  设置或返回窗口中的框架数量。
 location    用于窗口或框架的 Location 对象。请参阅 Location 对象。
 name    设置或返回窗口的名称。
@@ -42,7 +44,7 @@ screenX
 screenY
 只读整数。声明了窗口的左上角在屏幕上的的 x 坐标和 y 坐标。IE、Safari 和 Opera 支持 screenLeft 和 screenTop，而 Firefox 和 Safari 支持 screenX 和 screenY。
 
-# Window 对象方法
+## Window 对象方法
 方法  描述
 alert() 显示带有一段消息和一个确认按钮的警告框。
 blur()  把键盘焦点从顶层窗口移开。

@@ -91,6 +91,16 @@ git config credential.helper store
 # 强制lf
 git config --global core.autocrlf input
 
+# 在工作区使用CRLF，使用git commit提交的时候git帮你把所有的CRLF转换为LF。
+git config --global core.autocrlf true
+# 在工作区使用LF
+git config --global core.autocrlf input
+# 避免文件中有混用换行符
+git config --global core.safecrlf true
+————————————————
+版权声明：本文为CSDN博主「windanchaos」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/windanchaos/article/details/98958462
+
 # To stage all changes for commit:
 git add --all
 

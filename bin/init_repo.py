@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 import argparse
 
+from requests.api import head
+
 # import sys
 from clara import ThirdShell
 import requests
@@ -43,7 +45,10 @@ def init_repo(args=None):
     log.info("start request")
     response = requests.post(
         "https://api.github.com/user/repos",
-        json={"name": cwd.name},
+        headers={"Accept": "application/vnd.github.v3+json"},
+        json={
+            "name": cwd.name,
+        },
         auth=(args.userName, args.userPass),
     )
 

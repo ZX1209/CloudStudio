@@ -1,9 +1,10 @@
 # 媒体查询 
+@media (min-width: 30px) and (max-width: 50px) {  }
 
 # display 属性
 block: 占整行
 inline: 可在文字内
-none: 隐藏,不占位置
+none: 隐藏,不占位置 :star:
 inline-table: 每个元素同样的宽高
 
 # max-width
@@ -43,7 +44,8 @@ text-align
 text-indent
 text-decoration
 text-spacing
-text-overflow
+text-overflow 
+    scroll
 letter-spacing
 
 

@@ -245,13 +245,13 @@ export ALL_PROXY=http://127.0.0.1:8118/
 # cli proxy end
 
 # flutter start
-export FLUTTER_PATH=/home/gl/gl_home/archive/category-AppData/Linux/Flutter/flutter/bin/
+export FLUTTER_PATH=/home/gl/gl_home/archive/category-appdata/Linux/Flutter/flutter/bin/
 export PATH=$PATH:$FLUTTER_PATH
 
 export PUB_HOSTED_URL=https://pub.flutter-io.cn
 export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
 
-export PATH="$PATH":"$HOME/gl_home/archive/category-AppData/Linux/Flutter/flutter/.pub-cache/bin"
+export PATH="$PATH":"$HOME/gl_home/archive/category-appData/Linux/Flutter/flutter/.pub-cache/bin"
 export ENABLE_FLUTTER_DESKTOP=true
 
 # flutter config --enable-web
@@ -275,7 +275,7 @@ export EDITOR=/home/gl/CloudStudio/bin/code-wait.sh
 # crontab end
 
 # andriod start
-export ANDROID_HOME=/home/gl/gl_home/archive/category-AppData/Linux/android-sdk/
+export ANDROID_HOME=/home/gl/gl_home/archive/category-appData/Linux/android-sdk/
 export PATH=$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$PATH
 # andriod end
 
@@ -295,17 +295,6 @@ export PATH=$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$PATH
 export PATH=~/.npm-global/bin:$PATH
 # npm end
 
-# alias start
-alias python=python3
-alias ipython=ipython3
-alias py=python3
-alias ipy=ipython3
-
-alias ct='python /home/gl/gl_home/projects/play_ground/template-python/try/docopt_cli_parser.py'
-alias copytemplate='python /home/gl/gl_home/projects/play_ground/template-python/try/docopt_cli_parser.py'
-
-# alias end
-
 # func start
 
 function applist(){
@@ -317,6 +306,23 @@ function autorestart(){
     sudo rtcwake -m freeze -l -t $(date +%s -d "tomorrow 06:58")
 }
 
+function screen_off(){
+    xset dpms force off
+}
+
 # func end
+
+# alias start
+alias python=python3
+alias ipython=ipython3
+alias py=python3
+alias ipy=ipython3
+
+alias ct='python /home/gl/gl_home/projects/play_ground/template-python/try/docopt_cli_parser.py'
+alias copytemplate='python /home/gl/gl_home/projects/play_ground/template-python/try/docopt_cli_parser.py'
+
+# alias end
+
+
 
 xset r rate 200 20  

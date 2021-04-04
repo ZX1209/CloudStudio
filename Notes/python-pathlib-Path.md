@@ -21,8 +21,8 @@ str(f)
 
 # get modified and created time of a file
 import time
-time.ctime(f.stat().st_mtime())
-time.ctime(f.stat().st_ctime())
+time.ctime(f.stat().st_mtime)
+time.ctime(f.stat().st_ctime)
 
 f.stat().st_size()
 

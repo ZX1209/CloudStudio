@@ -1,3 +1,5 @@
+apt-get install python3-venv
+
 #创建虚拟环境
 python3 -m venv my_venv
 
