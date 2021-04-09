@@ -326,3 +326,8 @@ alias copytemplate='python /home/gl/gl_home/projects/play_ground/template-python
 
 
 xset r rate 200 20  
+
+
+# shopt start
+shopt -s huponexit
+# shopt end

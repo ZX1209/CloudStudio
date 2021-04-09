@@ -1,0 +1,1 @@
+ITX（Mini-ATX，尺寸17CM*17CM），M-ATX（Micro-ATX，尺寸24.4CM*24.4CM），ATX（尺寸：30.5CM x 24.4CM），另外还有更大的E-ATX和更小的nano-ITX。因此机箱也会分为mini机箱、中塔式机箱和全塔式机箱，其中mini机箱一般是指能够安装ITX和M-ATX的机箱，中塔则是指ATX主板的机箱，全塔机箱则是为了E-ATX板而设计的，全塔机箱体积硕大，mini机箱就显得比较娇小。

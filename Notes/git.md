@@ -5,6 +5,9 @@ git merge
 
 git show-branch
 
+## 更新另一个分支的文件变化(最好commit 之后)
+git checkout {branch} {file}
+
 # 文件权限变更忽略
 git config --global core.filemode false
 .git/config;filemode=true
