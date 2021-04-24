@@ -88,7 +88,7 @@ fi
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
 # some more ls aliases
-alias ll='ls -alF'
+alias ll='ls -alFsh'
 alias la='ls -A'
 alias l='ls -CF'
 
@@ -236,12 +236,25 @@ export PYTHONPATH
 
 # cli proxy start
 # privoxy port
-export http_proxy=http://127.0.0.1:8118/
-export https_proxy=$http_proxy
-export ftp_proxy=$http_proxy
-export rsync_proxy=$http_proxy
-export no_proxy="localhost, 127.0.0.1, ::1"
-export ALL_PROXY=http://127.0.0.1:8118/
+function proxy_export(){
+    export http_proxy=http://127.0.0.1:8118/
+    export https_proxy=$http_proxy
+    export ftp_proxy=$http_proxy
+    export rsync_proxy=$http_proxy
+    export no_proxy="localhost, 127.0.0.1, ::1"
+    export ALL_PROXY=http://127.0.0.1:8118/
+}
+
+function proxy_unset(){
+    unset http_proxy=http://127.0.0.1:8118/
+    unset https_proxy=$http_proxy
+    unset ftp_proxy=$http_proxy
+    unset rsync_proxy=$http_proxy
+    unset no_proxy="localhost, 127.0.0.1, ::1"
+    unset ALL_PROXY=http://127.0.0.1:8118/
+}
+
+proxy_export
 # cli proxy end
 
 # flutter start
