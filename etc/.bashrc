@@ -246,12 +246,12 @@ function proxy_export(){
 }
 
 function proxy_unset(){
-    unset http_proxy=http://127.0.0.1:8118/
-    unset https_proxy=$http_proxy
-    unset ftp_proxy=$http_proxy
-    unset rsync_proxy=$http_proxy
-    unset no_proxy="localhost, 127.0.0.1, ::1"
-    unset ALL_PROXY=http://127.0.0.1:8118/
+    unset http_proxy
+    unset https_proxy
+    unset ftp_proxy
+    unset rsync_proxy
+    unset no_proxy
+    unset ALL_PROXY
 }
 
 proxy_export
