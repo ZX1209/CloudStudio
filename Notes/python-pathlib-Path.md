@@ -36,6 +36,10 @@ Path.cwd()
 Path.home()
 ```
 
+# expand user
+Path.expanduser()
+
+
 # create file
 Path.touch()
 
@@ -63,7 +67,7 @@ p.glob(*.py)
 ```
 
 # resolve
-将符号路径转换成绝对路径
+resolve symlinks and eliminate “..” components.
 
 # p.rglob
 迭代遍历
